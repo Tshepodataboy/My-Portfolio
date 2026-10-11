@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tshepo Moroke — Roadway to Business Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="brandmark" onclick="go('home')"><img src="assets/images/tshepo-databoy.png" alt="Tshepo Databoy" style="height:44px;width:auto;display:block;"></button>
+    <ul class="nav-links">
+      <li><button onclick="go('work')">Case Studies</button></li>
+      <li><button onclick="go('qualifications')">Qualifications</button></li>
+      <li><button onclick="go('contact')">Contact</button></li>
+    </ul>
+    <button class="nav-cta" onclick="go('work')">See Case Studies</button>
+    <button class="nav-burger" onclick="toggleMobileNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile-panel" id="nav-mobile-panel">
+    <button onclick="go('work');toggleMobileNav()">Case Studies</button>
+    <button onclick="go('qualifications');toggleMobileNav()">Qualifications</button>
+    <button onclick="go('contact');toggleMobileNav()">Contact</button>
+  </div>
+</nav>
+
+
+<div id="view-home" class="view active">
+  <div class="wrap">
+    <div class="th-hero">
+      <div>
+        <h1>Turning Business Data<br>Into <span style="color:var(--olive);">&#10037;</span> Actionable<br>Insights</h1>
+        <div class="th-tagrow"><span>Requirements</span><span class="ast">&#10037;</span><span>Process Mapping</span><span class="ast">&#10037;</span><span>Data Analysis</span><span class="ast">&#10037;</span><span>Data Visualization</span></div>
+        <div class="th-hero-buttons">
+          <button class="pill ghost" onclick="go('contact')">Get In Touch</button>
+        </div>
+      </div>
+      <div class="th-photo-wrap">
+        <div class="th-photo-backdrop"></div>
+        <div class="th-photo-blackcard"><img src="assets/icons/chart-art.svg" style="position:absolute;inset:0;display:block;width:100%;height:100%;" alt=""></div>
+        <div class="th-photo-frame"><img src="assets/images/tshepo-moroke.png" alt="Tshepo Moroke"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="th-ribbon-wrap">
+    <div class="th-ribbon-track">
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Requirements Analysis</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Process Mapping</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Stakeholder Management</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Data Verification</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Root Cause Analysis</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Business Case / ROI</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Documentation (BRD)</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Requirements Analysis</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Process Mapping</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Stakeholder Management</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Data Verification</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Root Cause Analysis</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Business Case / ROI</div>
+      <div class="th-ribbon-item"><span class="ast">&#10037;</span>Documentation (BRD)</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="th-section-head" style="margin-top:0;">
+      <span class="ast">&#10037;</span>
+      <h2>Badges Earned</h2>
+      <p>Star Performer Distinctions</p>
+    </div>
+    <div class="th-badges">
+      <button class="th-badge" onclick="openQualModal('li-excel-cred','Master Microsoft Excel')" title="Master Microsoft Excel">
+        <img src="assets/images/learning-path-completion-badge-master-microsoft-excel.png" alt="Learning Path Completion badge, Master Microsoft Excel">
+      </button>
+      <button class="th-badge" onclick="go('case-01')" title="View case study">
+        <img src="assets/images/star-performer-badge-project-management-trainee-early-remote.png" alt="Star Performer badge, Project Management Trainee Early Remote Internship">
+      </button>
+      <button class="th-badge" onclick="go('case-02')" title="View case study">
+        <img src="assets/images/star-performer-badge-ai-powered-data-analysis-remote-interns.png" alt="Star Performer badge, AI Powered Data Analysis Remote Internship">
+      </button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="th-intro">
+      <div>
+        <div class="th-intro-label">Tshepo &#10037; Moroke</div>
+        <h3 class="th-intro-heading">Business Analyst<br>building toward a<br>Solutions&#8209;Architect roadway.</h3>
+      </div>
+      <div>
+        <p class="th-intro-para">I'm Tshepo Moroke, based in Pretoria. This site documents my roadway toward becoming a Business Analyst — every project here is a real step along that path: a real dataset cleaned, a real dashboard shipped, a real stakeholder conflict worked through, not a case study read about in a textbook. Requirements documentation, process mapping, and data verification are the foundation I've been building that roadway on.</p>
+        <div class="th-meta-row">
+          <div><div class="th-meta-label">Based In</div><div class="th-meta-value">Pretoria, South Africa</div></div>
+          <div><div class="th-meta-label">Education</div><div class="th-meta-value">Business Management N6</div></div>
+          <div><div class="th-meta-label">Focus</div><div class="th-meta-value">Business Analysis</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="th-stats">
+      <div class="th-stat">
+        <div class="th-stat-num">4</div>
+        <div class="th-stat-lbl">Case Studies Documented</div>
+      </div>
+      <div class="th-stat dark">
+        <div class="th-stat-num">8</div>
+        <div class="th-stat-lbl">Qualifications &amp; Certifications</div>
+      </div>
+      <div class="th-stat">
+        <div class="th-stat-num">3</div>
+        <div class="th-stat-lbl">Internships &amp; Job Simulations</div>
+      </div>
+    </div>
+
+    <div class="th-section-head">
+      <span class="ast">&#10037;</span>
+      <h2>Highlights</h2>
+      <p>Recognition &amp; Milestones</p>
+    </div>
+    <div class="th-recog-list">
+      <div class="th-recog-row">
+        <div class="th-recog-num">1</div>
+        <div><p class="th-recog-title">Star Performer Distinction</p><p class="th-recog-sub">AI Powered Data Analysis Remote Internship (RIT) &amp; Future Learning Summit 2027, Project Management Trainee Internship</p></div>
+        <div class="th-recog-right"><span class="th-recog-cat">Data Analytics &amp; PM</span><span class="th-recog-year">2026</span></div>
+      </div>
+      <div class="th-recog-row">
+        <div class="th-recog-num">2</div>
+        <div><p class="th-recog-title">Data Analytics Job Simulation</p><p class="th-recog-sub">Deloitte Australia, via Forage &mdash; Daikibo Industrials engagement</p></div>
+        <div class="th-recog-right"><span class="th-recog-cat">Forensic Analysis</span><span class="th-recog-year">2026</span></div>
+      </div>
+      <div class="th-recog-row">
+        <div class="th-recog-num">3</div>
+        <div><p class="th-recog-title">Business Management N6</p><p class="th-recog-sub">Pretoria Technical College</p></div>
+        <div class="th-recog-right"><span class="th-recog-cat">Education</span><span class="th-recog-year">2025</span></div>
+      </div>
+    </div>
+
+    <section id="work">
+      <div class="sec-head">
+        <h2>Case <span class="hl">Studies</span><span class="sec-tag">4 Projects</span></h2>
+      </div>
+      <div class="case-grid" id="case-grid">
+
+        <button class="ccard" onclick="go('case-01')">
+          <div class="ccover" style="background-image:url(assets/images/hero-01.jpg);"><div class="sponsor-badge"><img src="assets/images/saint-louis-university.png" alt="Saint Louis University" style="height:16px;width:auto;display:block;"></div><span class="mono">01</span></div>
+          <div class="ccontent">
+            <h4>Future Learning Summit 2027</h4>
+            <p>A fictional global event on XREAL smart glasses — Excelerate PM internship, full lifecycle from budget to final deck.</p>
+            <div class="ccard-tools">
+              <div class="ccard-tool" title="ClickUp"><img src="assets/icons/clickup.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Sheets"><img src="assets/icons/google-sheets.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Docs"><img src="assets/icons/google-docs.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Slides"><img src="assets/icons/google-slides.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Meet"><img src="assets/icons/google-meet.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Claude AI"><img src="assets/icons/claude-ai.svg" style="width:100%;height:100%;" alt=""></div>
+            </div>
+            <div class="cmeta"><span><i></i>Team Lead</span><span><i></i>4 weeks</span></div>
+          </div>
+        </button>
+
+        <button class="ccard" onclick="go('case-02')">
+          <div class="ccover" style="background-image:url(assets/images/hero-02.jpg);"><div class="sponsor-badge"><img src="assets/images/rit.png" alt="RIT" style="height:14px;width:auto;display:block;"></div><span class="mono">02</span></div>
+          <div class="ccontent">
+            <h4>Predicting Learner Participation</h4>
+            <p>Full data analytics lifecycle for RIT — cleaning, modelling, and a stakeholder-ready recommendation report.</p>
+            <div class="ccard-tools">
+              <div class="ccard-tool" title="Claude AI"><img src="assets/icons/claude-ai.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Sheets"><img src="assets/icons/google-sheets.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Colab"><img src="assets/icons/google-colab.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Slides"><img src="assets/icons/google-slides.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Docs"><img src="assets/icons/google-docs.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Google Meet"><img src="assets/icons/google-meet.svg" style="width:100%;height:100%;" alt=""></div>
+            </div>
+            <div class="cmeta"><span><i></i>Project Lead</span><span><i></i>4 weeks</span></div>
+          </div>
+        </button>
+
+        <button class="ccard" onclick="go('case-05')">
+          <div class="ccover" style="background-image:url(assets/images/hero-03.jpg);"><div class="sponsor-badge"><img src="assets/images/deloitte.png" alt="Deloitte" style="height:16px;width:auto;display:block;"></div><span class="mono">05</span></div>
+          <div class="ccontent">
+            <h4>Daikibo Industrials: Downtime Dashboard &amp; Pay Equity Audit</h4>
+            <p>Deloitte Australia job simulation — a Tableau downtime dashboard and an Excel forensic pay-equity classification.</p>
+            <div class="ccard-tools">
+              <div class="ccard-tool" title="Tableau"><img src="assets/icons/tableau.svg" style="width:100%;height:100%;" alt=""></div>
+              <div class="ccard-tool" title="Excel"><img src="assets/icons/excel.svg" style="width:100%;height:100%;" alt=""></div>
+            </div>
+            <div class="cmeta"><span><i></i>Data Analyst</span><span><i></i>Forage</span></div>
+          </div>
+        </button>
+
+        <button class="ccard" onclick="go('case-07')">
+          <div class="ccover" style="background-image:url(assets/images/hero-03.jpg);"><div class="sponsor-badge"><img src="assets/icons/google-g-icon.svg" style="height:16px;width:auto;display:block;" alt=""></div><span class="mono">07</span></div>
+          <div class="ccontent">
+            <h4>Google Business Intelligence</h4>
+            <p>Google Career Certificate, via Coursera &mdash; from stakeholder requirements through to ETL pipelines and stakeholder-ready dashboards.</p>
+            <div class="ccard-tools">
+              <div class="ccard-tool" title="Data Visualization"><img src="assets/icons/data-visualization.svg" style="width:100%;height:100%;" alt=""></div>
+            </div>
+            <div class="cmeta"><span><i></i>Learner</span><span><i></i>4 courses</span></div>
+          </div>
+        </button>
+
+
+      </div>
+    </section>
+
+    <section id="qualifications">
+      <div class="sec-head">
+        <h2>Qualifications &amp; <span class="hl purple">Certifications</span></h2>
+      </div>
+      <div class="qual-cols">
+        <div class="qual-card qual-panel active" id="qual-panel-0">
+          <h5>Education</h5>
+<p class="eyebrow" style="margin:4px 0 10px;">Formal Qualifications</p><div class="qual-item" style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/greenwood-college.png" alt="Greenwood College" style="max-height:26px;width:auto;"></div><div><h4>Matric (NSC)</h4><p>Greenwood College — 2019</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></div></div><div class="qual-item" style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/damelin-college.png" alt="Damelin College" style="max-height:24px;width:auto;"></div><div><h4>Business Management N4 &amp; N5</h4><p>Damelin College — 2022</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></div></div><div class="qual-item" style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/pretoria-technical-college.png" alt="Pretoria Technical College" style="max-height:28px;width:auto;"></div><div><h4>Business Management N6</h4><p>Pretoria Technical College — 2025</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></div></div><p class="eyebrow" style="margin:22px 0 10px;">Certifications &amp; Courses</p><div class="qual-item">
+            <button class="cred-toggle" onclick="openQualModal('li-excel-cred','Master Microsoft Excel')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/icons/linkedin-mark.svg" style="width:20px;height:20px;" alt=""></div><span><h4 style="margin:0;">Master Microsoft Excel</h4><p style="margin:4px 0 0;">LinkedIn Learning — 2023</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">&rarr;</span>
+            </button>
+            <div class="cred-panel" id="li-excel-cred">
+              <p class="b" style="font-size:12.5px;margin:14px 0 12px;">Learning Path completed 11 April 2023 &middot; 12 hours 38 min. Skills covered: Spreadsheets, Microsoft Excel.</p>
+              <img src="assets/images/master-microsoft-excel-certificate.jpg" alt="Master Microsoft Excel certificate" style="width:100%;max-width:340px;height:auto;border:1px solid var(--line);border-radius:8px;">
+            </div>
+          </div><div class="qual-item">
+            <button class="cred-toggle" onclick="openQualModal('li-pm-cred','Getting Started as a Project Manager')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/icons/linkedin-mark.svg" style="width:20px;height:20px;" alt=""></div><span><h4 style="margin:0;">Getting Started as a Project Manager</h4><p style="margin:4px 0 0;">LinkedIn Learning — 2023</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">&rarr;</span>
+            </button>
+            <div class="cred-panel" id="li-pm-cred">
+              <p class="b" style="font-size:12.5px;margin:14px 0 12px;">Learning Path completed 18 April 2023 &middot; 9 hours 43 min. Skills covered: Communication, Requirements Management, Stakeholder Management, Project Management, Microsoft Project, Risk Management.</p>
+              <img src="assets/images/getting-started-as-a-project-manager-certificate.jpg" alt="Getting Started as a Project Manager certificate" style="width:100%;max-width:340px;height:auto;border:1px solid var(--line);border-radius:8px;">
+            </div>
+          </div><div class="qual-item">
+            <button class="cred-toggle" onclick="go('case-07-cert')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/icons/google-logo.svg" style="width:22px;height:22px;" alt=""></div><span><h4>Google Business Intelligence</h4><p>Google, via Coursera — 2026</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+        <div class="qual-card qual-panel" id="qual-panel-1">
+          <h5>Internships</h5>
+<div class="qual-item">
+            <button class="cred-toggle" onclick="go('case-02-cert')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/rit.png" alt="RIT" style="height:18px;width:auto;"></div><span><h4 style="margin:0;">AI Powered Data Analysis Remote Internship</h4><p style="margin:4px 0 0;">Sponsored by RIT, powered by Excelerate — 2026</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">→</span>
+            </button>
+          </div><div class="qual-item">
+            <button class="cred-toggle" onclick="go('case-01-cert')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/saint-louis-university.png" alt="Saint Louis University" style="height:22px;width:auto;"></div><span><h4 style="margin:0;">Project Management Trainee Early Remote Internship</h4><p style="margin:4px 0 0;">Sponsored by Saint Louis University, powered by Excelerate — 2026</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">→</span>
+            </button>
+          </div></div>
+        <div class="qual-card qual-panel" id="qual-panel-2">
+          <h5>Job Simulations</h5>
+<div class="qual-item">
+            <button class="cred-toggle" onclick="go('case-05-cert')">
+              <div style="display:flex;align-items:center;gap:12px;"><div class="qual-logo-box"><img src="assets/images/deloitte.png" alt="Deloitte" style="max-height:22px;width:auto;"></div><span><h4 style="margin:0;">Data Analytics</h4><p style="margin:4px 0 0;">Deloitte, via Forage</p><div class="qual-status-row"><span class="qual-status completed"><i></i>Completed</span></div></span></div>
+              <span class="cred-arrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="stack" style="padding-top:0;">
+        <div class="sec-head" style="margin-bottom:28px;">
+          <h2>Tools &amp; <span class="hl magenta">Applications</span></h2>
+        </div>
+        <div class="marquee-wrap">
+          <div class="marquee-track">
+          <div class="logo-pill"><img src="assets/icons/google-sheets.svg" alt=""><span>Google Sheets</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-docs.svg" alt=""><span>Google Docs</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-slides.svg" alt=""><span>Google Slides</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-colab-2.svg" alt=""><span>Google Colab</span></div>
+          <div class="logo-pill"><img src="assets/icons/gmail.svg" alt=""><span>Gmail</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-chat.svg" alt=""><span>Google Chat</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-meet.svg" alt=""><span>Google Meet</span></div>
+          <div class="logo-pill"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
+          <div class="logo-pill"><img src="assets/icons/supabase.svg" alt=""><span>Supabase</span></div>
+          <div class="logo-pill"><img src="assets/icons/notion.svg" alt=""><span>Notion</span></div>
+          <div class="logo-pill"><img src="assets/icons/tableau.svg" alt=""><span>Tableau</span></div>
+          <div class="logo-pill"><img src="assets/icons/clickup.svg" alt=""><span>ClickUp</span></div>
+
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-sheets.svg" alt=""><span>Google Sheets</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-docs.svg" alt=""><span>Google Docs</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-slides.svg" alt=""><span>Google Slides</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-colab-2.svg" alt=""><span>Google Colab</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/gmail.svg" alt=""><span>Gmail</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-chat.svg" alt=""><span>Google Chat</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-meet.svg" alt=""><span>Google Meet</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/supabase.svg" alt=""><span>Supabase</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/notion.svg" alt=""><span>Notion</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/tableau.svg" alt=""><span>Tableau</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/clickup.svg" alt=""><span>ClickUp</span></div>
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="view-case-07" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-03">
+      <div class="sponsor-badge"><img src="assets/icons/google-logo.svg" style="width:16px;height:16px;" alt=""></div>
+      <p class="case-label">Case Study 07 &mdash; Business Intelligence &amp; Dashboards</p>
+      <h1>Google Business Intelligence</h1>
+      <p>Google Career Certificate &middot; 4-course specialization, via Coursera.</p>
+      <div class="tag-row">
+        <span class="tag">Data Visualization</span>
+        <span class="tag">ETL Pipelines</span>
+        <span class="tag">Stakeholder Dashboards</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">Situation</p>
+      <h2 class="h">Wanting the full BI pipeline, not just the tools</h2>
+      <p class="b">Plenty of short courses teach a single BI tool in isolation. I wanted a structured path that covered the whole chain — framing a business question, modelling and moving the data, then building something a stakeholder could actually act on — so I enrolled in Google's four-course Business Intelligence Professional Certificate.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">Four courses, one deliverable thread</h2>
+      <p class="b">The Foundations course ran on a fictional company, MarkIt, where I produced a Stakeholder Requirements document, a Project Requirements document, and a BI Strategy document — translating a vague business ask into something a data team could actually build against.</p>
+      <p class="b">The next three courses built on that foundation in sequence: modelling data and designing ETL pipelines in The Path to Insights, then applying design best practices to dashboards and stakeholder reporting in Decisions, Decisions, and finally using AI tools for job-search readiness in the capstone course.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Outcome</p>
+      <h2 class="h">Specialization completed, each course assessed</h2>
+      <div class="callout">Completed all four courses, with practice-based assessments graded between 88% and 100%.</div>
+      <p class="b">Foundations of Business Intelligence &mdash; 88.28%. The Path to Insights: Data Models and Pipelines &mdash; 93.75%. Decisions, Decisions: Dashboards and Reports &mdash; 97.28%. Accelerate Your Job Search with AI &mdash; 100%. The certificate was issued 3 October 2026.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Turning raw data into a decision stakeholders can use</h2>
+      <p class="b">The thread running through all four courses: a BI professional's job isn't finished when the data is clean or the dashboard is built — it's finished when a stakeholder can look at it and make a call. That's the standard I've carried into the case studies on this site.</p>
+    </section>
+
+    <section class="cert-section" id="case-07-cert">
+      <p class="eyebrow">Credential</p>
+      <h2 class="h">Google Business Intelligence</h2>
+      <p class="b">Professional Certificate completed 3 October 2026 &middot; 4 courses: Foundations of Business Intelligence, The Path to Insights, Decisions Decisions: Dashboards &amp; Reports, Accelerate Your Job Search with AI.</p>
+      <div style="margin-top:18px;">
+        <img src="assets/images/google-business-intelligence-professional-certificate.png" alt="Google Business Intelligence Professional Certificate" style="width:100%;max-width:640px;height:auto;border:1px solid var(--line);border-radius:8px;">
+      </div>
+    </section>
+
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+<div id="view-case-01" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-01">
+      <p class="case-label">Case Study 01 — Project Leadership</p>
+      <h1>Future Learning Summit 2027</h1>
+      <p>Team Lead, coordinating six teammates · <button class="see-link" style="color:#fff;border-bottom-color:rgba(255,255,255,0.5);font-size:inherit;font-weight:inherit;" onclick="go('case-01-cert')">Project Management Trainee Early Remote Internship</button>, sponsored by Saint Louis University, powered by Excelerate.</p>
+      <div class="tag-row">
+        <span class="tag">Fictional / Simulated Project</span>
+        <span class="tag">Stakeholder Analysis</span>
+        <span class="tag">Budget Planning</span>
+        <span class="tag">Quality Assurance</span>
+        <span class="tag">ClickUp</span>
+        <span class="tag">Google Workspace</span>
+      </div>
+      <div class="toolstack">
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:12px;"><img src="assets/icons/claude-ai.svg" style="width:100%;height:100%;" alt=""></div></div>
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:12px;"><img src="assets/icons/google-sheets.svg" style="width:100%;height:100%;" alt=""></div></div>
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:12px;"><img src="assets/icons/google-docs.svg" style="width:100%;height:100%;" alt=""></div></div>
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:12px;"><img src="assets/icons/google-slides.svg" style="width:100%;height:100%;" alt=""></div></div>
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:10px;"><img src="assets/icons/google-meet.svg" style="width:100%;height:100%;" alt=""></div></div>
+        <div class="toolstack-tile"><div class="toolstack-tile-inner" style="background:#fff;padding:12px;"><img src="assets/icons/clickup.svg" style="width:100%;height:100%;" alt=""></div></div>
+      </div>
+      <div class="toolstack-label">Claude AI &middot; Google Sheets &middot; Google Docs &middot; Google Slides &middot; Google Meet &middot; ClickUp</div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">The Concept</p>
+      <h2 class="h">A global classroom, seen through smart glasses</h2>
+      <div class="callout" style="margin-bottom:20px;">This is a fictional event, created as the internship's core project deliverable — it was never actually held. The planning, budget, and stakeholder documentation below were built to a real professional standard as an exercise in the full project management lifecycle.</div>
+      <p class="b">Future Learning Summit 2027 is a 10-day global virtual event where participants learn using XREAL's AI-powered smart glasses instead of handheld devices — lessons, live translation, and an AI tutor appear directly in the wearer's field of view, hands-free, so they're never looking down or losing eye contact with what's around them.</p>
+      <p class="b">The event is hosted by Excelerate (the education platform) in partnership with XREAL (the smart-glasses technology company): Excelerate gets a flagship AI-education event, XREAL gets a real-world classroom showcase and qualified leads. To drive engagement across all 10 days, the 5 most active participants win their own pair of XREAL smart glasses.</p>
+      <p class="b">As Team Lead, I coordinated six teammates through the full planning lifecycle as the core deliverable of the internship — this wasn't a live event, but the documentation was built to the same standard as if it were.</p>
+      <img src="assets/images/excelerate-academy-lms-viewed-through-xreal-smart-glasses.png" alt="Excelerate Academy LMS viewed through XREAL smart glasses" style="width:100%;height:auto;border-radius:16px;margin-bottom:28px;">
+      <div class="kpi-row">
+        <div class="kpi"><div class="val">$62,000</div><div class="lbl">Event budget</div></div>
+        <div class="kpi"><div class="val">2,500+</div><div class="lbl">Target participants</div></div>
+        <div class="kpi"><div class="val">40+</div><div class="lbl">Countries</div></div>
+        <div class="kpi"><div class="val">10 Days</div><div class="lbl">Live summit (Oct 30 – Nov 8, 2026)</div></div>
+      </div>
+      <p class="b">Planning ran across a 5-month lifecycle, July 10 – December 6, 2026, culminating in the live summit.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">Four weeks, what I did and what I learned</h2>
+
+      <div class="timeline">
+        <div class="t-row">
+          <div class="wk">Week 1</div>
+          <div>
+            <h4 style="margin-bottom:14px;">Project Initiation &amp; Planning</h4>
+            <div class="split">
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I did</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Led Team 18, coordinating six teammates</li>
+                  <li>Built the Team Charter, full Project Proposal (vision, objectives, KPIs, budget breakdown, risk register), and Global &amp; Virtual Event Engagement Plan</li>
+                  <li>Defined the project's foundation: the $62,000 budget, 2,500+ registration target, and 5-phase lifecycle</li>
+                </ul>
+              </div>
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I learned</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Translating a vague brief into concrete, measurable objectives and KPIs</li>
+                  <li>Structuring a multi-week team project with clear task ownership from day one</li>
+                  <li>Scoping a budget top-down before any activity-level detail exists</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-row">
+          <div class="wk">Week 2</div>
+          <div>
+            <h4 style="margin-bottom:14px;">Implementation Planning &amp; Stakeholder Management</h4>
+            <div class="split">
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I did</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Built the Project Implementation Plan solo: WBS, Gantt timeline, task dependencies, risk register</li>
+                  <li>Compiled the Stakeholder Management Plan and Stakeholder Analysis Matrix from teammate input, reconciling inconsistencies rather than merging drafts</li>
+                  <li>Caught a real gap — two members had no visible ownership in the compiled stakeholder docs despite owning tasks elsewhere — and fixed it</li>
+                </ul>
+              </div>
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I learned</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Sequencing dependencies instead of just listing tasks</li>
+                  <li>Power-Interest stakeholder prioritization as a decision-making tool, not just documentation</li>
+                  <li>Reconciling multiple people's independent work into one consistent source of truth</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-row">
+          <div class="wk">Week 3</div>
+          <div>
+            <h4 style="margin-bottom:14px;">Quality Assurance &amp; Budget Planning</h4>
+            <div class="split">
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I did</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Built the Activity-Based Budget Plan solo — 23 line items reconciled exactly to $62,000, resource allocation, contingency rules</li>
+                  <li>Co-built the Quality Assurance Framework (Logical Framework, Four-Level Model) — 14 quality aspects, compiled from partial team submissions</li>
+                  <li>Managed a live team-capacity issue: reassigned tasks with documented backup coverage when a member's availability became uncertain</li>
+                </ul>
+              </div>
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I learned</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Activity-based budgeting forces specificity that category-level budgets hide</li>
+                  <li>Quality assurance means defining measurable standards tied to actual project phases, not just "checking things work"</li>
+                  <li>Real team management: redistributing work without losing accountability</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-row">
+          <div class="wk">Week 4</div>
+          <div>
+            <h4 style="margin-bottom:14px;">Integration &amp; Communication</h4>
+            <div class="split">
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I did</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Revised the Implementation Plan to integrate three weeks of work into one coherent strategy</li>
+                  <li>Built and refined a 12-slide Final Presentation Package — caught and fixed an AI-generated visual look (repeated card grids, hub-and-spoke diagrams, colour-cycling) and replaced it with authentic, varied treatments</li>
+                  <li>Assigned and rehearsed a 4–5 person speaking plan under 8 minutes, with backup coverage and a script rewritten to explain the concept before the numbers</li>
+                </ul>
+              </div>
+              <div class="split-card">
+                <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.07em;color:var(--grey);font-weight:700;margin:0 0 10px;">What I learned</p>
+                <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--grey);line-height:1.65;">
+                  <li>Strategic integration means showing how plans connect, not just having all four exist</li>
+                  <li>Presenting to a non-technical audience means leading with plain-language concept, not jargon or stats</li>
+                  <li>Iteration is normal — most of Week 4 was refinement in response to real feedback, not first drafts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Outcome</p>
+      <h2 class="h">Future Learning Summit 2027 — Project Process Map</h2>
+      <div class="pmap-meta">Team 18 &middot; 5-Phase Lifecycle &middot; 10 July &ndash; 6 December 2026</div>
+      <div class="pmap-row" id="pmap-row">
+        <button class="pmap-card" style="background:#E8862B;" onclick="pmapToggle(0)">
+          <span class="pmap-card-name">Planning</span>
+          <span class="pmap-card-date">Jul 10 &ndash; Aug 6</span>
+        </button>
+        <button class="pmap-card" style="background:#E24A3A;" onclick="pmapToggle(1)">
+          <span class="pmap-card-name">Preparation</span>
+          <span class="pmap-card-date">Aug 7 &ndash; Oct 29</span>
+        </button>
+        <button class="pmap-card" style="background:#D6247D;" onclick="pmapToggle(2)">
+          <span class="pmap-card-name">Execution</span>
+          <span class="pmap-card-date">Oct 30 &ndash; Nov 8</span>
+        </button>
+        <button class="pmap-card" style="background:#7B3FE4;" onclick="pmapToggle(3)">
+          <span class="pmap-card-name">Closing</span>
+          <span class="pmap-card-date">Nov 9 &ndash; Nov 29</span>
+        </button>
+        <button class="pmap-card" style="background:#A83FC0;" onclick="pmapToggle(4)">
+          <span class="pmap-card-name">Feedback</span>
+          <span class="pmap-card-date">Nov 30 &ndash; Dec 6</span>
+        </button>
+      </div>
+
+      <div class="pmap-panel" id="pmap-panel-0">
+        <ul>
+          <li>Finalize objectives &amp; audience</li>
+          <li>Confirm XREAL sponsorship &amp; budget</li>
+          <li>Confirm speakers &amp; panelists</li>
+        </ul>
+        <span class="pmap-checkpoint"><img src="assets/icons/checkpoint-orange.svg" style="width:12;height:12;" alt="">Phase sign-off</span>
+      </div>
+      <div class="pmap-panel" id="pmap-panel-1">
+        <ul>
+          <li>Build website &amp; registration platform</li>
+          <li>Develop content &amp; XREAL demo logistics</li>
+          <li>Launch marketing campaign</li>
+        </ul>
+        <span class="pmap-checkpoint"><img src="assets/icons/checkpoint-red.svg" style="width:12;height:12;" alt="">Platform live &amp; speakers briefed</span>
+      </div>
+      <div class="pmap-panel" id="pmap-panel-2">
+        <ul>
+          <li>Deliver 10-day live summit programming</li>
+          <li>Run daily engagement mechanics</li>
+          <li>Monitor platform &amp; demo stability</li>
+        </ul>
+        <span class="pmap-checkpoint"><img src="assets/icons/checkpoint-pink.svg" style="width:12;height:12;" alt="">Event concludes</span>
+      </div>
+      <div class="pmap-panel" id="pmap-panel-3">
+        <ul>
+          <li>Fulfill XREAL giveaway (top 5)</li>
+          <li>Send thank-you comms &amp; certificates</li>
+          <li>Close out sponsor commitments</li>
+        </ul>
+        <span class="pmap-checkpoint"><img src="assets/icons/checkpoint-purple.svg" style="width:12;height:12;" alt="">All deliverables closed</span>
+      </div>
+      <div class="pmap-panel" id="pmap-panel-4">
+        <ul>
+          <li>Analyze survey &amp; KPI results</li>
+          <li>Deliver lessons-learned report</li>
+        </ul>
+      </div>
+
+      <p class="b" style="margin-top:16px;">Every deliverable moved from a solo or co-built draft to a reconciled, team-wide source of truth, including catching and correcting real gaps along the way — missing stakeholder ownership in Week 2, an uncertain member's capacity in Week 3, and a generic AI-look presentation in Week 4.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Running the full PM lifecycle, not just documenting it</h2>
+      <p class="b">Translating a vague brief into measurable KPIs, reconciling six people's independent work into one source of truth, activity-based budgeting to the dollar, and catching a generic-looking deliverable before it shipped — the difference between knowing project management frameworks and actually running one under a real deadline.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Documentation &amp; Supporting Materials</p>
+      <h2 class="h">Everything behind this case study</h2>
+      <div class="pin-row">
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--olive);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--olive);">01</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">Business Requirements Document</h4>
+          <p class="pin-desc">Objectives, scope, stakeholders, and ten traceable functional requirements.</p>
+          <a href="https://drive.google.com/file/d/1uufJyARtk9VEeoujkcx4H2SZB3Uso--G/view?usp=drivesdk" target="_blank" rel="noopener" class="pin-link">View BRD &#8599;</a>
+        </div>
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--accent-purple);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--accent-purple);">02</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">NotebookLM Video Overview</h4>
+          <p class="pin-desc">A generated video walkthrough of this project.</p>
+          <a href="https://notebook.google.com/notebook/bdcfa9d4-f987-48ee-b7af-bbaae71c4e68/artifact/b383eded-e0cf-4776-bd24-6f58d78f3a60" target="_blank" rel="noopener" class="pin-link">Watch on NotebookLM &#8599;</a>
+        </div>
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--accent-magenta);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--accent-magenta);">03</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4-4M12 14l4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">360&deg; Evaluation Report</h4>
+          <p class="pin-desc">Self, peer, and manager evaluation &mdash; 93% overall performance.</p>
+          <a href="https://drive.google.com/file/d/1-koHRQ5qQcvIa-BGv8-9EwKsZynkqY_7/view?usp=drivesdk" target="_blank" rel="noopener" class="pin-link">View Report &#8599;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cert-section" id="case-01-cert">
+      <p class="eyebrow">Credential</p>
+      <h2 class="h">Project Management Trainee Early Remote Internship</h2>
+      <p class="b">Sponsored by Saint Louis University, powered by Excelerate — Star Performer distinction, awarded for this project.</p>
+      <div style="margin-top:18px;">
+        <img src="assets/images/saint-louis-university.png" alt="Saint Louis University" style="height:26px;width:auto;margin-bottom:14px;display:block;">
+        <img src="assets/images/excelerate.png" alt="Excelerate" style="height:16px;width:auto;">
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;margin-top:18px;">
+        <img src="assets/images/project-management-trainee-early-remote-internship-star-perf.png" alt="Project Management Trainee Early Remote Internship Star Performer badge" style="width:180px;height:auto;">
+        <img src="assets/images/star-performer-certificate-of-achievement-project-management.jpg" alt="Star Performer certificate of achievement, Project Management Trainee Early Remote Internship" style="width:340px;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;">
+      </div>
+    </section>
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+<div id="view-case-02" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-02">
+      <p class="case-label">Case Study 02 — Predictive Analysis &amp; Data Science</p>
+      <h1>Predicting Learner Participation for RIT's Opportunity Programs</h1>
+      <p>Project Lead, Team 13 · <button class="see-link" style="color:#fff;border-bottom-color:rgba(255,255,255,0.5);font-size:inherit;font-weight:inherit;" onclick="go('case-02-cert')">AI-Powered Data Analysis Internship</button>, Excelerate, sponsored by Rochester Institute of Technology.</p>
+      <div class="tag-row">
+        <span class="tag">Python (pandas, scikit-learn, XGBoost)</span>
+        <span class="tag">Feature Engineering</span>
+        <span class="tag">Predictive Modelling</span>
+        <span class="tag">Stakeholder Reporting</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <div class="kpi-row">
+        <div class="kpi"><div class="val">8,558</div><div class="lbl">Learner records analyzed</div></div>
+        <div class="kpi"><div class="val">4</div><div class="lbl">ML models trained &amp; compared</div></div>
+        <div class="kpi"><div class="val">87.2%</div><div class="lbl">Accuracy, primary model</div></div>
+        <div class="kpi"><div class="val">0.940</div><div class="lbl">ROC AUC, primary model</div></div>
+      </div>
+      <p class="b" style="margin-top:24px;">Over four weeks I led Team 13 through a full data analytics lifecycle: cleaning and understanding a raw learner-opportunity dataset, engineering features and uncovering participation trends, building and evaluating predictive models, and synthesizing everything into a program insights report and executive presentation for RIT's program managers.</p>
+      <p class="b">The core question: which learners are likely to follow through on the opportunities — internships, courses, events, competitions, engagements — they sign up for, and what should the program actually do about it?</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">The Challenge</p>
+      <h2 class="h">No systematic way to anticipate drop-off</h2>
+      <p class="b">RIT's opportunity programs had no systematic way to anticipate learner drop-off. The dataset spanned 8,558 learner-opportunity records across 71 countries and 2,089 institutions — but raw and unexamined: corrupted dates, no engineered signals, and no visibility into where participation was actually breaking down.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">Four weeks, raw CSV to stakeholder-ready model</h2>
+      <div class="timeline">
+        <div class="t-row">
+          <div class="wk">Week 1</div>
+          <div>
+            <h4>Data Understanding</h4>
+            <ul>
+              <li>Audited and cleaned all 8,558 records; identified and fixed 107 corrupted date values</li>
+              <li>Built a full data dictionary and profiled every field across 5 opportunity categories, 71 countries, and 2,089 institutions</li>
+              <li>Established the clean baseline dataset the rest of the project was built on</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-row">
+          <div class="wk">Week 2</div>
+          <div>
+            <h4>Feature Engineering &amp; Cohort Analysis</h4>
+            <ul>
+              <li>Engineered 15 new features (16 → 31 columns), including application speed, opportunity duration, and cohort timing</li>
+              <li>Uncovered the project's central finding: Internships drew 63.3% of all signups but carried a 65.8% rejection rate, versus near-zero rejection for every other category</li>
+              <li>Identified a cohort-volume effect — smaller signup months converted far better (84.7% peak) than the largest cohort month (27.2%)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-row">
+          <div class="wk">Week 3</div>
+          <div>
+            <h4>Predictive Modelling</h4>
+            <ul>
+              <li>Trained and compared four models — Logistic Regression, Decision Tree, Random Forest, and XGBoost</li>
+              <li>Selected XGBoost as the primary model: 87.23% accuracy, 93.57% precision, 78.56% recall, 0.940 ROC AUC</li>
+              <li>Diagnosed the model's error profile (false negatives outnumbering false positives ~4:1) and translated that into a concrete threshold-tuning recommendation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-row">
+          <div class="wk">Week 4</div>
+          <div>
+            <h4>Synthesis &amp; Communication</h4>
+            <ul>
+              <li>Compiled three weeks of findings into a Program Insights &amp; Recommendation Report and a stakeholder-ready presentation deck</li>
+              <li>Verified every figure in the final deliverables against the underlying source reports before submission</li>
+              <li>Delivered prioritized, scalable recommendations — tiered outreach by predicted probability, faster application nudges, standardized opportunity metadata</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Impact &amp; Recommendations</p>
+      <h2 class="h">From a "selectivity" problem to a capacity problem</h2>
+      <div class="callout">Reframed what looked like an internship "selectivity" problem into a capacity and communication problem.</div>
+      <p class="b">The analysis gave RIT program managers a model that flags exactly which learners — particularly the roughly 50% of Internship applicants sitting in the model's medium-confidence tier — are most worth proactive outreach before they disengage.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Reflection</p>
+      <h2 class="h">The handoff between analysis and decision-making</h2>
+      <p class="b">Leading this project end-to-end — from a raw CSV to a model in production-ready form and a report a program manager could act on — sharpened how I think about that handoff. The most useful thing I did all internship wasn't the model itself; it was insisting that every number in our final deliverables be traced back to a verified source before it reached a stakeholder.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Documentation &amp; Supporting Materials</p>
+      <h2 class="h">Everything behind this case study</h2>
+      <div class="pin-row">
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--accent-purple);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--accent-purple);">01</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">NotebookLM Video Overview</h4>
+          <p class="pin-desc">A generated video walkthrough of this project.</p>
+          <a href="https://notebook.google.com/notebook/6bb1572b-e12f-4d30-8d65-d524ed8f8477/artifact/280100b2-393f-4275-ba83-71e61d416894" target="_blank" rel="noopener" class="pin-link">Watch on NotebookLM &#8599;</a>
+        </div>
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--accent-magenta);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--accent-magenta);">02</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4-4M12 14l4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">360&deg; Evaluation Report</h4>
+          <p class="pin-desc">Self, peer, and manager evaluation &mdash; 96% overall performance.</p>
+          <a href="https://drive.google.com/file/d/1SLqwxQpHe9x0qi1xnsYXBuuH2aVkO6zl/view?usp=drivesdk" target="_blank" rel="noopener" class="pin-link">View Report &#8599;</a>
+        </div>
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--olive);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--olive);">03</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">Business Requirements Document</h4>
+          <p class="pin-desc">Objectives, scope, stakeholders, and modelling requirements for the RIT dataset.</p>
+          <a href="https://drive.google.com/file/d/15qYags_osslmgPJ7rFhNlkmUzsM2aINl/view?usp=drivesdk" target="_blank" rel="noopener" class="pin-link">View BRD &#8599;</a>
+        </div>
+        <div class="pin-card">
+          <div class="pin-dot" style="background:var(--accent-purple);"></div>
+          <div class="pin-top">
+            <span class="pin-num" style="color:var(--accent-purple);">04</span>
+            <div class="pin-icon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+          </div>
+          <h4 class="pin-title">Data Dictionary</h4>
+          <p class="pin-desc">All 31 columns documented &mdash; types, nulls, value ranges, and modelling notes.</p>
+          <a href="https://drive.google.com/file/d/1YWZkMZgVY6efG09RWiyzAFOawd0FZHE7/view?usp=drivesdk" target="_blank" rel="noopener" class="pin-link">View Data Dictionary &#8599;</a>
+        </div>
+      </div>
+    </section>
+    <section class="cert-section" id="case-02-cert">
+      <p class="eyebrow">Credential</p>
+      <h2 class="h">AI-Powered Data Analysis Remote Internship</h2>
+      <p class="b">Sponsored by Rochester Institute of Technology, powered by Excelerate — Star Performer distinction, awarded for this project.</p>
+      <div style="margin:18px 0 22px;">
+        <img src="assets/images/rit.png" alt="RIT" style="height:22px;width:auto;margin-bottom:14px;display:block;"><img src="assets/images/excelerate.png" alt="Excelerate" style="height:16px;width:auto;">
+      </div>
+      <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
+        <img src="assets/images/ai-powered-data-analysis-internship-badge.png" alt="AI Powered Data Analysis Internship badge" style="width:130px;height:auto;">
+        <img src="assets/images/ai-powered-data-analysis-internship-certificate.jpg" alt="AI Powered Data Analysis Internship certificate" style="width:340px;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;">
+      </div>
+    </section>
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+<div id="view-case-03" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-04">
+      <p class="case-label">Case Study 03 — Data Migration &amp; Process</p>
+      <h1>Mawaza Motor Spares Web Store</h1>
+      <p>Practical Training Placement (NQF6) · Supabase-backed e-commerce build.</p>
+      <div class="tag-row">
+        <span class="tag">Data Cleaning</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">524-row migration</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">Situation</p>
+      <h2 class="h">A catalog import that would not go through</h2>
+      <p class="b">A CSV import for the new web store's product catalog was failing on every attempt, with no clear error surfaced to the team.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">Diagnosing the schema, then cleaning the data</h2>
+      <p class="b">Diagnosed the root cause as a column-type mismatch (UUID vs. text) in the Supabase schema, then cleaned the underlying 524-row product file — extracting part codes, generating tags, and removing duplicates before re-importing.</p>
+      <p class="b">This built on earlier related work processing a 1,000+ row stocktake Excel file, including category extraction, brand/size parsing, and colour-coded status columns.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Outcome</p>
+      <h2 class="h">A working import pipeline, a clean catalog</h2>
+      <div class="callout">Traced a recurring import failure back to a single schema-level type mismatch.</div>
+      <p class="b">The corrected schema and cleaned dataset gave the storefront a functioning import pipeline and a product catalog ready to publish.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Diagnosing a technical failure back to its root cause</h2>
+      <p class="b">The same discipline BABOK groups under Solution Evaluation — applied to a real small-business system, not a textbook example.</p>
+    </section>
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+<div id="view-case-04" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-05">
+      <p class="case-label">Case Study 04 — Process Modelling</p>
+      <h1>Process Mapping &amp; Root Cause Analysis</h1>
+      <p>Coursera — Business Analysis and Process Management.</p>
+      <div class="tag-row">
+        <span class="tag">Swimlane Diagrams</span>
+        <span class="tag">Root Cause Analysis</span>
+        <span class="tag">Order Fulfilment</span>
+        <span class="tag">Recruitment</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">Situation</p>
+      <h2 class="h">Two processes, no documented "as-is" state</h2>
+      <p class="b">Two business processes — Order Fulfilment and Recruitment — needed structured "as-is" documentation before any improvement could be proposed.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">Model first, then diagnose</h2>
+      <div class="split">
+        <div class="split-card"><h4>Order Fulfilment</h4><p>Full swim-lane process model built to document the current-state flow end to end.</p></div>
+        <div class="split-card"><h4>Recruitment</h4><p>Full swim-lane process model built to document the current-state flow end to end.</p></div>
+      </div>
+      <p class="b" style="margin-top:20px;">With both processes mapped, I ran a complete root-cause and solutions analysis on each, compiling the findings into a formatted, presentation-ready report.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Outcome</p>
+      <h2 class="h">A documented baseline for improvement</h2>
+      <div class="callout">Both processes moved from undocumented to fully mapped, with root causes identified before any solution was proposed.</div>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Current-state mapping before recommending change</h2>
+      <p class="b">The discipline BABOK groups under Requirements Analysis and Strategy Analysis — resisting the instinct to jump straight to a fix before the process is actually understood.</p>
+    </section>
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+<div id="view-case-05" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-03">
+      <p class="case-label">Case Study 05 &mdash; Data Analytics &amp; Forensic Technology</p>
+      <h1>Daikibo Industrials: Downtime Dashboard &amp; Pay Equity Audit</h1>
+      <p>Data Analyst &middot; <button class="see-link" style="color:#fff;border-bottom-color:rgba(255,255,255,0.5);font-size:inherit;font-weight:inherit;" onclick="go('case-05-cert')">Data Analytics Job Simulation</button>, Deloitte Australia, via Forage.</p>
+      <div class="tag-row">
+        <span class="tag">Tableau</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Forensic Analysis</span>
+        <span class="tag">Dashboard Design</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">Brief</p>
+      <h2 class="h">Two engagements, one client</h2>
+      <p class="b">This simulation replicates real work from Deloitte Australia's Data Analytics team, working for a fictional manufacturing client, Daikibo Industrials. It covered two engagements: building an interactive telemetry dashboard to diagnose equipment downtime, and auditing compensation data for gender pay equity.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Task 1 &mdash; Data Analysis</p>
+      <h2 class="h">Factory downtime dashboard, built in Tableau</h2>
+      <p class="b">Daikibo collects machine telemetry from four factories &mdash; Tokyo, Osaka, Berlin, and Shenzhen &mdash; each running nine machine types reporting status every 10 minutes. The brief: find where machines broke down most, and which machine types drove it.</p>
+      <p class="b">I imported and unified a month of JSON telemetry data (May 2021) across all four locations, then built a calculated field &mdash; <b>Unhealthy</b> &mdash; converting each unhealthy status reading into 10 minutes of estimated downtime. From there I built two visualizations, Down Time per Factory and Down Time per Device Type, and combined them into a single interactive dashboard where selecting a factory dynamically filters the device-type breakdown to that location. That let me identify the highest-downtime factory and drill straight into which machine types were driving it.</p>
+      <div class="kpi-row">
+        <div class="kpi"><span class="kpi-n">4</span><span class="kpi-l">factories unified</span></div>
+        <div class="kpi"><span class="kpi-n">9</span><span class="kpi-l">machine types tracked</span></div>
+      </div>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Task 2 &mdash; Forensic Technology</p>
+      <h2 class="h">Classifying a gender pay equality audit, in Excel</h2>
+      <p class="b">Following internal complaints about pay inequality, Daikibo's Forensic Tech team had already scored every job role at every factory on an Equality Score (&ndash;100 to +100, 0 being ideal). My job was to classify each score into a discrimination tier so the findings could be acted on: Fair (&ndash;10 to +10), Unfair (beyond &plusmn;10 up to &plusmn;20), and Highly Discriminative (beyond &plusmn;20).</p>
+      <p class="b">I added a fourth column, Equality Class, and classified all 37 role/factory records against that rule &mdash; cross-checking the logic against the provided worked examples (10 &rarr; Fair, &ndash;9 &rarr; Unfair, &ndash;30 &rarr; Highly Discriminative) before applying it at scale.</p>
+      <p class="b">The pattern that emerged: scores skewed consistently negative, and the imbalance concentrated at the top of the org chart &mdash; C-Level, VP, Director, and Manager-tier roles clustered in the Unfair and Highly Discriminative bands across all four factories, while Engineer-tier and Machine Operator roles stayed mostly within the Fair band. That points the client toward senior leadership and management pay bands as the priority area for corrective action, rather than a company-wide issue.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Same discipline, two different tools</h2>
+      <p class="b">Both tasks followed the same underlying discipline: take a raw, client-supplied dataset, apply a defined analytical rule consistently, and surface a conclusion a non-technical stakeholder can act on &mdash; which factory to prioritize, which management tier to investigate. That mirrors the kind of first-pass diagnostic work an analyst hands to a client engagement lead.</p>
+    </section>
+
+    <section class="cert-section" id="case-05-cert">
+      <p class="eyebrow">Credential</p>
+      <h2 class="h">Data Analytics Job Simulation</h2>
+      <p class="b">Deloitte Australia, via Forage &mdash; practical tasks completed in data analysis and forensic technology.</p>
+      <div style="display:flex;align-items:center;gap:16px;margin:18px 0 22px;">
+        <img src="assets/images/deloitte.png" alt="Deloitte" style="max-height:24px;width:auto;">
+        <img src="assets/images/forage.png" alt="Forage" style="max-height:22px;width:auto;">
+      </div>
+      <img src="assets/images/deloitte-data-analytics-job-simulation-certificate.jpg" alt="Deloitte Data Analytics Job Simulation certificate" style="width:340px;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;">
+    </section>
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+<div id="view-case-06" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-06">
+      <div class="sponsor-badge"><img src="assets/images/mtn.png" alt="MTN" style="height:20px;width:auto;display:block;"></div>
+      <p class="case-label">Case Study 06 &mdash; Product Design &amp; Frontend Build</p>
+      <h1>MoMo Store: Seller App &amp; Customer's Screen</h1>
+      <p>Solo Build &middot; MTN Fintech Summit &mdash; MoMo Hackathon 2026, South Africa.</p>
+      <div class="tag-row">
+        <span class="tag">React 18</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Vite</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">MoMo Open API</span>
+      </div>
+    </div>
+
+    <section class="momo-live-wrap">
+      <div class="momo-live-scroll">
+        <iframe id="momo-live-iframe" class="momo-live-frame" title="MoMo Store live demo &mdash; Seller App and Customer's Screen"></iframe>
+      </div>
+<script src="src/momo-app-embed.js"></script>
+    </section>
+
+
+    <section class="body-sec">
+      <p class="eyebrow">Brief</p>
+      <h2 class="h">Two connected products, one small business owner</h2>
+      <p class="b">MoMo Store gives a small business owner two connected products: a Seller App to run the business day-to-day &mdash; products, stock, payments, a live financial picture, an AI assistant, and WiFi-based support calling &mdash; and a Customer's Screen their customers can browse and pay from directly through MTN MoMo.</p>
+      <p class="b">Both are built around MTN MoMo's real product surface (Collections, Disbursements, and the Collection Widget's QR-based checkout) and designed for the informal and small-business sellers the Hackathon's SME track is aimed at.</p>
+      <p class="b" style="font-style:italic;color:var(--grey);border-left:3px solid var(--olive);padding-left:16px;">Note: this is a fully working front-end prototype. It is not yet wired to MTN's live MoMo Open API &mdash; the payment flows (Request to Pay, Collection Widget QR) are built to match MTN's real API shape and are ready to connect to sandbox credentials.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">The Problem</p>
+      <h2 class="h">Payments without the tools around payments</h2>
+      <p class="b">MTN's own Group Fintech leadership has named mini apps for SME payments, credit, and business management as a strategic priority &mdash; small business owners in the MoMo ecosystem currently have payments, but not the tools around payments: no simple way to track what they're owed, what they've spent restocking, or to give customers a place to browse and buy without WhatsApp back-and-forth.</p>
+      <p class="b">Three specific gaps shaped this build: no lightweight business management layer for revenue, expenses, and profit; no public storefront to send customers to; and no in-app way to reach support without cellular airtime.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">The Solution &mdash; 1. Seller App</p>
+      <h2 class="h">The seller's control center</h2>
+      <p class="b">Product catalog, stock, storefront branding, and a full financial ledger, wrapped in MTN's navy-and-gold identity.</p>
+      <p class="b"><b>Dashboard</b> &mdash; a live overview the moment the seller opens the app: revenue, money out, net profit, and pending payments, plus a merged activity feed across every source of money in or out, low-stock alerts, and quick links into the rest of the app.</p>
+      <p class="b"><b>Products</b> &mdash; sellers list up to 5 products for free, each with a photo, price, and live stock count. A destructive-action safeguard requires typing the exact product name before deleting one. A dedicated Stock Purchasing Records tab tracks every restock as its own expense entry.</p>
+      <p class="b"><b>Storefront Settings</b> &mdash; store name, logo, slogan, and description, with a live preview shown as the seller edits, powering the separate public Customer's Screen.</p>
+      <p class="b"><b>Transactions</b> &mdash; a real financial ledger, not just an order list. Money In tracks every payment source; Money Out mirrors it for expenses, and either side can optionally be tied back to a specific product.</p>
+      <p class="b"><b>AI Assistant &amp; WiFi Calling</b> &mdash; an in-app chatbot for running the store, with a one-tap escalation to a live support call carried over WiFi/data instead of cellular &mdash; addressing a real gap, since MoMo support today has no in-app calling option at all.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">The Solution &mdash; 2. Customer's Screen</p>
+      <h2 class="h">Two ways to pay</h2>
+      <p class="b">A standalone site a seller's customers land on directly, with no admin tools visible, reading its identity and product catalog from the same store the seller manages in the Seller App. Every purchase can go one of two ways, mirroring MTN's own MoMo API structure: a direct Checkout &amp; Pay flow, or Scan to Pay &mdash; a real, scannable QR code matching the shape of MoMo's Collection Widget.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">How This Maps to MTN's MoMo Open API</p>
+      <h2 class="h">Built against the real API shape</h2>
+      <p class="b">Every payment flow in both apps was designed against MTN's actual published MoMo Open API products, so the path to a live sandbox integration is a matter of wiring credentials, not redesigning flows.</p>
+      <div style="border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:20px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,0.07);font-family:var(--display);font-weight:700;font-size:13px;color:var(--ink);">
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">App Feature</div>
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">MoMo API Product</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Payment Request / Checkout &amp; Pay</div>
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Collections &mdash; Request to Pay</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Scan to Pay (QR checkout)</div>
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Collection Widget</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Money Out / restocking payouts</div>
+          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Disbursements</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
+          <div style="padding:12px 18px;">Sandbox testing before go-live</div>
+          <div style="padding:12px 18px;border-left:1px solid var(--line);">Sandbox (API user + key provisioning)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Designing to a real, published API before wiring it up</h2>
+      <p class="b">Every flow in both apps was structured against MTN's actual MoMo Open API products from the start &mdash; Collections, Disbursements, the Collection Widget &mdash; so the interface never had to be redesigned once sandbox credentials come in. That discipline, plus splitting a seller's admin tools from a buyer's shopping experience into two deliberately separate apps, was the core design decision behind the whole build.</p>
+      <p class="b" style="margin-top:18px;"><b>What's Next:</b> connect both apps to a shared backend, wire Collections/Disbursements/the Collection Widget to MTN's sandbox then production API, and replace the simulated WiFi call with real WebRTC signaling to a live support queue.</p>
+    </section>
+
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+
+
+<div class="wrap">
+  <div class="th-section-head">
+    <span class="ast">&#10037;</span>
+    <h2>Let's Build</h2>
+    <p>Start A Conversation</p>
+  </div>
+  <div style="max-width:520px;margin:0 auto 60px;">
+    <div class="bridge-col dark flip-card" id="build-flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h5 style="color:var(--olive);">Let's Build</h5>
+            <h3>Have a process worth mapping?</h3>
+            <p>Every project here started as something I had to figure out, not something I already knew how to do.</p>
+            <button class="pill light" onclick="flipBuildCard(true)">Start a conversation</button>
+          </div>
+          <div class="flip-back">
+            <div class="flip-back-top">
+              <h5 style="color:var(--olive);margin:0;">Quick Message</h5>
+              <button class="flip-close" onclick="flipBuildCard(false)">← Back</button>
+            </div>
+            <form onsubmit="return sendBuildForm(event)" style="display:flex;flex-direction:column;flex:1;">
+              <div class="flip-form-row"><input type="text" id="bf-name" placeholder="Your name" required></div>
+              <div class="flip-form-row"><input type="email" id="bf-email" placeholder="Your email" required></div>
+              <div class="flip-form-row" style="flex:1;"><textarea id="bf-message" placeholder="What are you working on?" required></textarea></div>
+              <button type="submit" class="pill light" style="margin-top:auto;">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h3>Let's talk about where I could fit.</h3>
+        <p>Open to graduate programmes, internships, and analyst roles — happy to walk through any case study in more depth.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <a href="mailto:tshepodataboy@gmail.com">tshepodataboy@gmail.com</a>
+        <span style="display:block;color:rgba(255,255,255,0.65);font-size:14px;">Pretoria, Gauteng</span>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <button onclick="go('work')">Case Studies</button>
+        <button onclick="go('qualifications')">Qualifications</button>
+      </div>
+      <div class="foot-col">
+        <h5>Social</h5>
+        <div class="foot-social-row">
+          <a class="foot-social-btn" href="https://linkedin.com/in/tshepodataboy" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <img src="assets/icons/linkedin.svg" style="width:20;height:20;" alt="">
+          </a>
+          <a class="foot-social-btn" href="https://github.com/tshepodataboy" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <img src="assets/icons/github.svg" style="width:20;height:20;" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Tshepo Moroke — Business Analysis Portfolio</p>
+    </div>
+  </div>
+</footer>
+
+<script src="src/main.js"></script>
+
+<div class="qual-modal-backdrop" id="qual-modal-backdrop" onclick="if(event.target===this) closeQualModal()">
+  <div class="qual-modal">
+    <button class="qual-modal-close" onclick="closeQualModal()" aria-label="Close">✕</button>
+    <p class="qual-modal-title" id="qual-modal-title"></p>
+    <div id="qual-modal-body"></div>
+  </div>
+</div>
+
+</body>
+</html>
