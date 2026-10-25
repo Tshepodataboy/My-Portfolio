@@ -7,7 +7,6 @@ Static site (no build step). Open `index.html` in a browser, or host it as-is.
 index.html              page markup
 src/styles.css          all styles
 src/main.js             navigation, tabs, certificate pop-ups, scroll behaviour
-src/momo-app-embed.js   embedded MoMo dashboard demo (case study 06)
 assets/images/          photos, certificates, badges, institution logos
 assets/icons/           tool / brand icons and chart art (SVG)
 ```

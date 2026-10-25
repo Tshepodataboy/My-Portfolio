@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
+<link rel="stylesheet" href="src/styles.css?v=2">
 </head>
 <body>
 
@@ -34,7 +34,7 @@
   <div class="wrap">
     <div class="th-hero">
       <div>
-        <h1>Turning Business Data<br>Into <span style="color:var(--olive);">&#10037;</span> Actionable<br>Insights</h1>
+        <h1>Turning Business Data<br>Into <span style="color:var(--olive);">&#10037;</span> <span class="hero-accent-word">Actionable</span><br>Solutions</h1>
         <div class="th-tagrow"><span>Requirements</span><span class="ast">&#10037;</span><span>Process Mapping</span><span class="ast">&#10037;</span><span>Data Analysis</span><span class="ast">&#10037;</span><span>Data Visualization</span></div>
         <div class="th-hero-buttons">
           <button class="pill ghost" onclick="go('contact')">Get In Touch</button>
@@ -146,64 +146,97 @@
       </div>
       <div class="case-grid" id="case-grid">
 
-        <button class="ccard" onclick="go('case-01')">
-          <div class="ccover" style="background-image:url(assets/images/hero-01.jpg);"><div class="sponsor-badge"><img src="assets/images/saint-louis-university.png" alt="Saint Louis University" style="height:16px;width:auto;display:block;"></div><span class="mono">01</span></div>
-          <div class="ccontent">
-            <h4>Future Learning Summit 2027</h4>
-            <p>A fictional global event on XREAL smart glasses — Excelerate PM internship, full lifecycle from budget to final deck.</p>
-            <div class="ccard-tools">
-              <div class="ccard-tool" title="ClickUp"><img src="assets/icons/clickup.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Sheets"><img src="assets/icons/google-sheets.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Docs"><img src="assets/icons/google-docs.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Slides"><img src="assets/icons/google-slides.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Meet"><img src="assets/icons/google-meet.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Claude AI"><img src="assets/icons/claude-ai.svg" style="width:100%;height:100%;" alt=""></div>
+        <article class="card" onclick="go('case-01')">
+          <div class="card__cover"><img src="assets/images/hero-01.jpg" alt=""></div>
+          <div class="card__panel">
+            <div class="card__avatar"><img src="assets/images/excelerate.png" alt="Excelerate"></div>
+            <div class="card__id">
+              <p class="card__name"><span title="Future Learning Summit 2027">Future Learning Summit 2027</span> <svg class="card__badge" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1.6l2.28 1.68 2.79-.19.9 2.69 2.34 1.52-.98 2.65.98 2.65-2.34 1.52-.9 2.69-2.79-.19L12 22.4l-2.28-1.68-2.79.19-.9-2.69-2.34-1.52.98-2.65-.98-2.65 2.34-1.52.9-2.69 2.79.19L12 1.6z"/><path d="M10.7 15.2L7.6 12.1l1.24-1.24 1.86 1.86 4.46-4.46 1.24 1.24-5.7 5.72z" fill="#fff"/></svg></p>
+              <p class="card__handle">Case Study 01 &middot; Project Leadership</p>
+              <button class="card__follow" type="button">view</button>
             </div>
-            <div class="cmeta"><span><i></i>Team Lead</span><span><i></i>4 weeks</span></div>
           </div>
-        </button>
+          <div class="card__body">
+            <p class="card__desc">A simulated 10-day global virtual summit, planned end-to-end as Team Lead &mdash; budget, stakeholders, and QA.</p>
+            <div class="card__stats">
+              <span><b>$62,000</b> budget</span>
+              <span><b>2,500+</b> participants</span>
+            </div>
+            <div class="card__link">
+              <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Open case study</span>
+            </div>
+          </div>
+        </article>
 
-        <button class="ccard" onclick="go('case-02')">
-          <div class="ccover" style="background-image:url(assets/images/hero-02.jpg);"><div class="sponsor-badge"><img src="assets/images/rit.png" alt="RIT" style="height:14px;width:auto;display:block;"></div><span class="mono">02</span></div>
-          <div class="ccontent">
-            <h4>Predicting Learner Participation</h4>
-            <p>Full data analytics lifecycle for RIT — cleaning, modelling, and a stakeholder-ready recommendation report.</p>
-            <div class="ccard-tools">
-              <div class="ccard-tool" title="Claude AI"><img src="assets/icons/claude-ai.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Sheets"><img src="assets/icons/google-sheets.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Colab"><img src="assets/icons/google-colab.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Slides"><img src="assets/icons/google-slides.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Docs"><img src="assets/icons/google-docs.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Google Meet"><img src="assets/icons/google-meet.svg" style="width:100%;height:100%;" alt=""></div>
+        <article class="card" onclick="go('case-02')">
+          <div class="card__cover"><img src="assets/images/hero-02.jpg" alt=""></div>
+          <div class="card__panel">
+            <div class="card__avatar"><img src="assets/images/rit.png" alt="RIT"></div>
+            <div class="card__id">
+              <p class="card__name"><span title="Predicting Learner Participation">Predicting Learner Participation</span> <svg class="card__badge" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1.6l2.28 1.68 2.79-.19.9 2.69 2.34 1.52-.98 2.65.98 2.65-2.34 1.52-.9 2.69-2.79-.19L12 22.4l-2.28-1.68-2.79.19-.9-2.69-2.34-1.52.98-2.65-.98-2.65 2.34-1.52.9-2.69 2.79.19L12 1.6z"/><path d="M10.7 15.2L7.6 12.1l1.24-1.24 1.86 1.86 4.46-4.46 1.24 1.24-5.7 5.72z" fill="#fff"/></svg></p>
+              <p class="card__handle">Case Study 02 &middot; Predictive Analytics</p>
+              <button class="card__follow" type="button">view</button>
             </div>
-            <div class="cmeta"><span><i></i>Project Lead</span><span><i></i>4 weeks</span></div>
           </div>
-        </button>
+          <div class="card__body">
+            <p class="card__desc">An XGBoost model that flags which learners will follow through on the opportunities they sign up for.</p>
+            <div class="card__stats">
+              <span><b>8,558</b> records</span>
+              <span><b>87.2%</b> accuracy</span>
+            </div>
+            <div class="card__link">
+              <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Open case study</span>
+            </div>
+          </div>
+        </article>
 
-        <button class="ccard" onclick="go('case-05')">
-          <div class="ccover" style="background-image:url(assets/images/hero-03.jpg);"><div class="sponsor-badge"><img src="assets/images/deloitte.png" alt="Deloitte" style="height:16px;width:auto;display:block;"></div><span class="mono">05</span></div>
-          <div class="ccontent">
-            <h4>Daikibo Industrials: Downtime Dashboard &amp; Pay Equity Audit</h4>
-            <p>Deloitte Australia job simulation — a Tableau downtime dashboard and an Excel forensic pay-equity classification.</p>
-            <div class="ccard-tools">
-              <div class="ccard-tool" title="Tableau"><img src="assets/icons/tableau.svg" style="width:100%;height:100%;" alt=""></div>
-              <div class="ccard-tool" title="Excel"><img src="assets/icons/excel.svg" style="width:100%;height:100%;" alt=""></div>
+        <article class="card" onclick="go('case-05')">
+          <div class="card__cover"><img src="assets/images/hero-03.jpg" alt=""></div>
+          <div class="card__panel">
+            <div class="card__avatar"><img src="assets/images/deloitte.png" alt="Deloitte"></div>
+            <div class="card__id">
+              <p class="card__name"><span title="Daikibo Industrials: Downtime Dashboard &amp; Pay Equity Audit">Daikibo Industrials: Downtime Dashboard &amp; Pay Equity Audit</span> <svg class="card__badge" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1.6l2.28 1.68 2.79-.19.9 2.69 2.34 1.52-.98 2.65.98 2.65-2.34 1.52-.9 2.69-2.79-.19L12 22.4l-2.28-1.68-2.79.19-.9-2.69-2.34-1.52.98-2.65-.98-2.65 2.34-1.52.9-2.69 2.79.19L12 1.6z"/><path d="M10.7 15.2L7.6 12.1l1.24-1.24 1.86 1.86 4.46-4.46 1.24 1.24-5.7 5.72z" fill="#fff"/></svg></p>
+              <p class="card__handle">Case Study 05 &middot; Data Analytics &amp; Forensics</p>
+              <button class="card__follow" type="button">view</button>
             </div>
-            <div class="cmeta"><span><i></i>Data Analyst</span><span><i></i>Forage</span></div>
           </div>
-        </button>
+          <div class="card__body">
+            <p class="card__desc">A Tableau dashboard diagnosing factory downtime, plus an Excel pay-equity audit across four factories.</p>
+            <div class="card__stats">
+              <span><b>4</b> factories</span>
+              <span><b>9</b> machine types</span>
+            </div>
+            <div class="card__link">
+              <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Open case study</span>
+            </div>
+          </div>
+        </article>
 
-        <button class="ccard" onclick="go('case-07')">
-          <div class="ccover" style="background-image:url(assets/images/hero-03.jpg);"><div class="sponsor-badge"><img src="assets/icons/google-g-icon.svg" style="height:16px;width:auto;display:block;" alt=""></div><span class="mono">07</span></div>
-          <div class="ccontent">
-            <h4>Google Business Intelligence</h4>
-            <p>Google Career Certificate, via Coursera &mdash; from stakeholder requirements through to ETL pipelines and stakeholder-ready dashboards.</p>
-            <div class="ccard-tools">
-              <div class="ccard-tool" title="Data Visualization"><img src="assets/icons/data-visualization.svg" style="width:100%;height:100%;" alt=""></div>
+        <article class="card" onclick="go('case-07')">
+          <div class="card__cover"><img src="assets/images/hero-04.jpg" alt=""></div>
+          <div class="card__panel">
+            <div class="card__avatar"><img src="assets/icons/google-g-icon.svg" alt="Google"></div>
+            <div class="card__id">
+              <p class="card__name"><span title="Google Business Intelligence">Google Business Intelligence</span> <svg class="card__badge" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1.6l2.28 1.68 2.79-.19.9 2.69 2.34 1.52-.98 2.65.98 2.65-2.34 1.52-.9 2.69-2.79-.19L12 22.4l-2.28-1.68-2.79.19-.9-2.69-2.34-1.52.98-2.65-.98-2.65 2.34-1.52.9-2.69 2.79.19L12 1.6z"/><path d="M10.7 15.2L7.6 12.1l1.24-1.24 1.86 1.86 4.46-4.46 1.24 1.24-5.7 5.72z" fill="#fff"/></svg></p>
+              <p class="card__handle">Case Study 07 &middot; BI &amp; Dashboards</p>
+              <button class="card__follow" type="button">view</button>
             </div>
-            <div class="cmeta"><span><i></i>Learner</span><span><i></i>4 courses</span></div>
           </div>
-        </button>
+          <div class="card__body">
+            <p class="card__desc">Google's four-course BI certificate &mdash; framing questions, moving data, and dashboards stakeholders can act on.</p>
+            <div class="card__stats">
+              <span><b>4</b> courses</span>
+              <span><b>88&ndash;100%</b> scores</span>
+            </div>
+            <div class="card__link">
+              <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Open case study</span>
+            </div>
+          </div>
+        </article>
 
 
       </div>
@@ -810,94 +843,6 @@
   </div>
 </div>
 
-<div id="view-case-03" class="view">
-  <div class="cwrap">
-    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    <div class="case-hero hero-img-04">
-      <p class="case-label">Case Study 03 — Data Migration &amp; Process</p>
-      <h1>Mawaza Motor Spares Web Store</h1>
-      <p>Practical Training Placement (NQF6) · Supabase-backed e-commerce build.</p>
-      <div class="tag-row">
-        <span class="tag">Data Cleaning</span>
-        <span class="tag">Supabase</span>
-        <span class="tag">524-row migration</span>
-      </div>
-    </div>
-
-    <section class="body-sec">
-      <p class="eyebrow">Situation</p>
-      <h2 class="h">A catalog import that would not go through</h2>
-      <p class="b">A CSV import for the new web store's product catalog was failing on every attempt, with no clear error surfaced to the team.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Approach</p>
-      <h2 class="h">Diagnosing the schema, then cleaning the data</h2>
-      <p class="b">Diagnosed the root cause as a column-type mismatch (UUID vs. text) in the Supabase schema, then cleaned the underlying 524-row product file — extracting part codes, generating tags, and removing duplicates before re-importing.</p>
-      <p class="b">This built on earlier related work processing a 1,000+ row stocktake Excel file, including category extraction, brand/size parsing, and colour-coded status columns.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Outcome</p>
-      <h2 class="h">A working import pipeline, a clean catalog</h2>
-      <div class="callout">Traced a recurring import failure back to a single schema-level type mismatch.</div>
-      <p class="b">The corrected schema and cleaned dataset gave the storefront a functioning import pipeline and a product catalog ready to publish.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Skill Demonstrated</p>
-      <h2 class="h">Diagnosing a technical failure back to its root cause</h2>
-      <p class="b">The same discipline BABOK groups under Solution Evaluation — applied to a real small-business system, not a textbook example.</p>
-    </section>
-    <div class="case-end-spacer"></div>
-  </div>
-</div>
-
-<div id="view-case-04" class="view">
-  <div class="cwrap">
-    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    <div class="case-hero hero-img-05">
-      <p class="case-label">Case Study 04 — Process Modelling</p>
-      <h1>Process Mapping &amp; Root Cause Analysis</h1>
-      <p>Coursera — Business Analysis and Process Management.</p>
-      <div class="tag-row">
-        <span class="tag">Swimlane Diagrams</span>
-        <span class="tag">Root Cause Analysis</span>
-        <span class="tag">Order Fulfilment</span>
-        <span class="tag">Recruitment</span>
-      </div>
-    </div>
-
-    <section class="body-sec">
-      <p class="eyebrow">Situation</p>
-      <h2 class="h">Two processes, no documented "as-is" state</h2>
-      <p class="b">Two business processes — Order Fulfilment and Recruitment — needed structured "as-is" documentation before any improvement could be proposed.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Approach</p>
-      <h2 class="h">Model first, then diagnose</h2>
-      <div class="split">
-        <div class="split-card"><h4>Order Fulfilment</h4><p>Full swim-lane process model built to document the current-state flow end to end.</p></div>
-        <div class="split-card"><h4>Recruitment</h4><p>Full swim-lane process model built to document the current-state flow end to end.</p></div>
-      </div>
-      <p class="b" style="margin-top:20px;">With both processes mapped, I ran a complete root-cause and solutions analysis on each, compiling the findings into a formatted, presentation-ready report.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Outcome</p>
-      <h2 class="h">A documented baseline for improvement</h2>
-      <div class="callout">Both processes moved from undocumented to fully mapped, with root causes identified before any solution was proposed.</div>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Skill Demonstrated</p>
-      <h2 class="h">Current-state mapping before recommending change</h2>
-      <p class="b">The discipline BABOK groups under Requirements Analysis and Strategy Analysis — resisting the instinct to jump straight to a fix before the process is actually understood.</p>
-    </section>
-    <div class="case-end-spacer"></div>
-  </div>
-</div>
 <div id="view-case-05" class="view">
   <div class="cwrap">
     <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -953,105 +898,11 @@
         <img src="assets/images/forage.png" alt="Forage" style="max-height:22px;width:auto;">
       </div>
       <img src="assets/images/deloitte-data-analytics-job-simulation-certificate.jpg" alt="Deloitte Data Analytics Job Simulation certificate" style="width:340px;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;">
-    </section>
-    <div class="case-end-spacer"></div>
+    </section>    <div class="case-end-spacer"></div>
   </div>
 </div>
-<div id="view-case-06" class="view">
-  <div class="cwrap">
-    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    <div class="case-hero hero-img-06">
-      <div class="sponsor-badge"><img src="assets/images/mtn.png" alt="MTN" style="height:20px;width:auto;display:block;"></div>
-      <p class="case-label">Case Study 06 &mdash; Product Design &amp; Frontend Build</p>
-      <h1>MoMo Store: Seller App &amp; Customer's Screen</h1>
-      <p>Solo Build &middot; MTN Fintech Summit &mdash; MoMo Hackathon 2026, South Africa.</p>
-      <div class="tag-row">
-        <span class="tag">React 18</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">Vite</span>
-        <span class="tag">Tailwind CSS</span>
-        <span class="tag">MoMo Open API</span>
-      </div>
-    </div>
-
-    <section class="momo-live-wrap">
-      <div class="momo-live-scroll">
-        <iframe id="momo-live-iframe" class="momo-live-frame" title="MoMo Store live demo &mdash; Seller App and Customer's Screen"></iframe>
-      </div>
-<script src="src/momo-app-embed.js"></script>
-    </section>
 
 
-    <section class="body-sec">
-      <p class="eyebrow">Brief</p>
-      <h2 class="h">Two connected products, one small business owner</h2>
-      <p class="b">MoMo Store gives a small business owner two connected products: a Seller App to run the business day-to-day &mdash; products, stock, payments, a live financial picture, an AI assistant, and WiFi-based support calling &mdash; and a Customer's Screen their customers can browse and pay from directly through MTN MoMo.</p>
-      <p class="b">Both are built around MTN MoMo's real product surface (Collections, Disbursements, and the Collection Widget's QR-based checkout) and designed for the informal and small-business sellers the Hackathon's SME track is aimed at.</p>
-      <p class="b" style="font-style:italic;color:var(--grey);border-left:3px solid var(--olive);padding-left:16px;">Note: this is a fully working front-end prototype. It is not yet wired to MTN's live MoMo Open API &mdash; the payment flows (Request to Pay, Collection Widget QR) are built to match MTN's real API shape and are ready to connect to sandbox credentials.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">The Problem</p>
-      <h2 class="h">Payments without the tools around payments</h2>
-      <p class="b">MTN's own Group Fintech leadership has named mini apps for SME payments, credit, and business management as a strategic priority &mdash; small business owners in the MoMo ecosystem currently have payments, but not the tools around payments: no simple way to track what they're owed, what they've spent restocking, or to give customers a place to browse and buy without WhatsApp back-and-forth.</p>
-      <p class="b">Three specific gaps shaped this build: no lightweight business management layer for revenue, expenses, and profit; no public storefront to send customers to; and no in-app way to reach support without cellular airtime.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">The Solution &mdash; 1. Seller App</p>
-      <h2 class="h">The seller's control center</h2>
-      <p class="b">Product catalog, stock, storefront branding, and a full financial ledger, wrapped in MTN's navy-and-gold identity.</p>
-      <p class="b"><b>Dashboard</b> &mdash; a live overview the moment the seller opens the app: revenue, money out, net profit, and pending payments, plus a merged activity feed across every source of money in or out, low-stock alerts, and quick links into the rest of the app.</p>
-      <p class="b"><b>Products</b> &mdash; sellers list up to 5 products for free, each with a photo, price, and live stock count. A destructive-action safeguard requires typing the exact product name before deleting one. A dedicated Stock Purchasing Records tab tracks every restock as its own expense entry.</p>
-      <p class="b"><b>Storefront Settings</b> &mdash; store name, logo, slogan, and description, with a live preview shown as the seller edits, powering the separate public Customer's Screen.</p>
-      <p class="b"><b>Transactions</b> &mdash; a real financial ledger, not just an order list. Money In tracks every payment source; Money Out mirrors it for expenses, and either side can optionally be tied back to a specific product.</p>
-      <p class="b"><b>AI Assistant &amp; WiFi Calling</b> &mdash; an in-app chatbot for running the store, with a one-tap escalation to a live support call carried over WiFi/data instead of cellular &mdash; addressing a real gap, since MoMo support today has no in-app calling option at all.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">The Solution &mdash; 2. Customer's Screen</p>
-      <h2 class="h">Two ways to pay</h2>
-      <p class="b">A standalone site a seller's customers land on directly, with no admin tools visible, reading its identity and product catalog from the same store the seller manages in the Seller App. Every purchase can go one of two ways, mirroring MTN's own MoMo API structure: a direct Checkout &amp; Pay flow, or Scan to Pay &mdash; a real, scannable QR code matching the shape of MoMo's Collection Widget.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">How This Maps to MTN's MoMo Open API</p>
-      <h2 class="h">Built against the real API shape</h2>
-      <p class="b">Every payment flow in both apps was designed against MTN's actual published MoMo Open API products, so the path to a live sandbox integration is a matter of wiring credentials, not redesigning flows.</p>
-      <div style="border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:20px;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,0.07);font-family:var(--display);font-weight:700;font-size:13px;color:var(--ink);">
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">App Feature</div>
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">MoMo API Product</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Payment Request / Checkout &amp; Pay</div>
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Collections &mdash; Request to Pay</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Scan to Pay (QR checkout)</div>
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Collection Widget</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);">Money Out / restocking payouts</div>
-          <div style="padding:12px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);">Disbursements</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;font-size:14px;color:var(--grey);">
-          <div style="padding:12px 18px;">Sandbox testing before go-live</div>
-          <div style="padding:12px 18px;border-left:1px solid var(--line);">Sandbox (API user + key provisioning)</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Skill Demonstrated</p>
-      <h2 class="h">Designing to a real, published API before wiring it up</h2>
-      <p class="b">Every flow in both apps was structured against MTN's actual MoMo Open API products from the start &mdash; Collections, Disbursements, the Collection Widget &mdash; so the interface never had to be redesigned once sandbox credentials come in. That discipline, plus splitting a seller's admin tools from a buyer's shopping experience into two deliberately separate apps, was the core design decision behind the whole build.</p>
-      <p class="b" style="margin-top:18px;"><b>What's Next:</b> connect both apps to a shared backend, wire Collections/Disbursements/the Collection Widget to MTN's sandbox then production API, and replace the simulated WiFi call with real WebRTC signaling to a live support queue.</p>
-    </section>
-
-    <div class="case-end-spacer"></div>
-  </div>
-</div>
 
 
 
