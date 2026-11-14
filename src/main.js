@@ -241,3 +241,9 @@ function qualTab(i){
       fallback();
     }
   }
+
+  function closeMobileNavAndContact(){
+    const panel = document.getElementById('nav-mobile-panel');
+    if(panel) panel.classList.remove('open');
+    openContactModal();
+  }

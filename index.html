@@ -23,7 +23,7 @@
       <li><button onclick="go('work')">Case Studies</button></li>
       <li><button onclick="go('qualifications')">Qualifications</button></li>
       <li><button onclick="go('about')">About</button></li>
-      <li><button onclick="go('contact')">Contact</button></li>
+      <li><button onclick="openContactModal()">Contact</button></li>
     </ul>
     <button class="nav-cta" onclick="go('work')">See Case Studies</button>
     <button class="nav-burger" onclick="toggleMobileNav()" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -32,7 +32,7 @@
     <button onclick="go('work');toggleMobileNav()">Case Studies</button>
     <button onclick="go('qualifications');toggleMobileNav()">Qualifications</button>
     <button onclick="go('about');toggleMobileNav()">About</button>
-    <button onclick="go('contact');toggleMobileNav()">Contact</button>
+    <button onclick="closeMobileNavAndContact()">Contact</button>
   </div>
 </nav>
 
@@ -302,7 +302,7 @@
           <div><div class="th-meta-label">Education</div><div class="th-meta-value">Business Management N6</div></div>
           <div><div class="th-meta-label">Focus</div><div class="th-meta-value">Business Analysis</div></div>
         </div>
-        <button class="about-cta" onclick="go('contact')">Get in touch</button>
+        <button class="about-cta" onclick="openContactModal()">Get in touch</button>
       </div>
     </div>
     <div class="about-panel__main">
@@ -928,7 +928,7 @@
   </div>
 </footer>
 
-<script src="src/main.js?v=6"></script>
+<script src="src/main.js?v=7"></script>
 
 <div class="qual-modal-backdrop" id="qual-modal-backdrop" onclick="if(event.target===this) closeQualModal()">
   <div class="qual-modal">
