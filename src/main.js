@@ -181,3 +181,63 @@ function qualTab(i){
 
   window.addEventListener('hashchange', route);
   window.addEventListener('DOMContentLoaded', route);
+
+  function openContactModal(){
+    document.getElementById('contact-modal-backdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeContactModal(){
+    document.getElementById('contact-modal-backdrop').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape') closeContactModal();
+  });
+
+  function copyContactEmail(btn){
+    const email = 'Tshepodataboy@gmail.com';
+    const label = btn.dataset.label || btn.textContent.trim();
+    btn.dataset.label = label;
+
+    const done = () => {
+      btn.textContent = 'Copied';
+      btn.classList.add('is-copied');
+      clearTimeout(btn._copyTimer);
+      btn._copyTimer = setTimeout(() => {
+        btn.textContent = label;
+        btn.classList.remove('is-copied');
+      }, 1700);
+    };
+
+    const fallback = () => {
+      const ta = document.createElement('textarea');
+      ta.value = email;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.top = '-1000px';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
+      document.body.removeChild(ta);
+      if(ok) done();
+      else btn.textContent = 'Select & copy';
+    };
+
+    if(navigator.clipboard && window.isSecureContext){
+      let settled = false;
+      const guard = setTimeout(() => {
+        if(!settled){ settled = true; fallback(); }
+      }, 600);
+      navigator.clipboard.writeText(email).then(() => {
+        settled = true; clearTimeout(guard); done();
+      }).catch(() => {
+        if(!settled){ settled = true; clearTimeout(guard); fallback(); }
+      });
+    } else {
+      fallback();
+    }
+  }

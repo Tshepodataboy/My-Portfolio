@@ -7,13 +7,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css?v=11">
+<link rel="stylesheet" href="src/styles.css?v=32">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <button class="brandmark" onclick="go('home')"><img src="assets/images/tshepo-databoy.png" alt="Tshepo Databoy" style="height:44px;width:auto;display:block;"></button>
+    <button class="brandmark" onclick="go('home')" aria-label="Tshepo Databoy — home">
+      <span class="brandmark-stack">
+        <img class="brandmark-under" src="assets/images/tshepo-databoy.png" alt="" aria-hidden="true">
+        <img class="brandmark-top" src="assets/images/tshepo-databoy.png" alt="Tshepo Databoy">
+      </span>
+    </button>
     <ul class="nav-links">
       <li><button onclick="go('work')">Case Studies</button></li>
       <li><button onclick="go('qualifications')">Qualifications</button></li>
@@ -38,12 +43,11 @@
         <h1>Turning Business Data<br>Into <span style="color:var(--olive);">&#10037;</span> <span class="hero-accent-word">Actionable</span><br>Solutions</h1>
         <div class="th-tagrow"><span>Requirements</span><span class="ast">&#10037;</span><span>Process Mapping</span><span class="ast">&#10037;</span><span>Data Analysis</span><span class="ast">&#10037;</span><span>Data Visualization</span></div>
         <div class="th-hero-buttons">
-          <button class="pill ghost" onclick="go('contact')">Get In Touch</button>
+          <button class="pill ghost" onclick="openContactModal()">Get In Touch</button>
         </div>
       </div>
       <div class="th-photo-wrap">
-        <div class="th-photo-backdrop"></div>
-        <div class="th-photo-blackcard"><img src="assets/icons/chart-art.svg" style="position:absolute;inset:0;display:block;width:100%;height:100%;" alt=""></div>
+        <div class="th-photo-art"><img src="https://i.pinimg.com/originals/62/12/48/6212485181ca055f760855d98d3ee4bc.gif" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
         <div class="th-photo-frame"><img src="assets/images/tshepo-moroke.png" alt="Tshepo Moroke"></div>
       </div>
     </div>
@@ -65,6 +69,22 @@
       <div class="th-ribbon-item"><span class="ast">&#10037;</span>Root Cause Analysis</div>
       <div class="th-ribbon-item"><span class="ast">&#10037;</span>Business Case / ROI</div>
       <div class="th-ribbon-item"><span class="ast">&#10037;</span>Documentation (BRD)</div>
+
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Requirements Analysis</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Process Mapping</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Stakeholder Management</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Data Verification</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Root Cause Analysis</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Business Case / ROI</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Documentation (BRD)</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Requirements Analysis</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Process Mapping</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Stakeholder Management</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Data Verification</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Root Cause Analysis</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Business Case / ROI</div>
+      <div class="th-ribbon-item" aria-hidden="true"><span class="ast">&#10037;</span>Documentation (BRD)</div>
+
     </div>
   </div>
 
@@ -247,7 +267,17 @@
           <div class="logo-pill"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
           <div class="logo-pill"><img src="assets/icons/google-sheets.svg" alt=""><span>Google Sheets</span></div>
           <div class="logo-pill"><img src="assets/icons/clickup.svg" alt=""><span>ClickUp</span></div>
+          <div class="logo-pill"><img src="assets/icons/supabase.svg" alt=""><span>Supabase</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-colab-2.svg" alt=""><span>Google Colab</span></div>
+          <div class="logo-pill"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
+          <div class="logo-pill"><img src="assets/icons/google-sheets.svg" alt=""><span>Google Sheets</span></div>
+          <div class="logo-pill"><img src="assets/icons/clickup.svg" alt=""><span>ClickUp</span></div>
 
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/supabase.svg" alt=""><span>Supabase</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-colab-2.svg" alt=""><span>Google Colab</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-sheets.svg" alt=""><span>Google Sheets</span></div>
+          <div class="logo-pill" aria-hidden="true"><img src="assets/icons/clickup.svg" alt=""><span>ClickUp</span></div>
           <div class="logo-pill" aria-hidden="true"><img src="assets/icons/supabase.svg" alt=""><span>Supabase</span></div>
           <div class="logo-pill" aria-hidden="true"><img src="assets/icons/google-colab-2.svg" alt=""><span>Google Colab</span></div>
           <div class="logo-pill" aria-hidden="true"><img src="assets/icons/miro.svg" alt=""><span>Miro</span></div>
@@ -898,13 +928,27 @@
   </div>
 </footer>
 
-<script src="src/main.js?v=3"></script>
+<script src="src/main.js?v=6"></script>
 
 <div class="qual-modal-backdrop" id="qual-modal-backdrop" onclick="if(event.target===this) closeQualModal()">
   <div class="qual-modal">
     <button class="qual-modal-close" onclick="closeQualModal()" aria-label="Close">✕</button>
     <p class="qual-modal-title" id="qual-modal-title"></p>
     <div id="qual-modal-body"></div>
+  </div>
+</div>
+
+<div class="qual-modal-backdrop" id="contact-modal-backdrop" onclick="if(event.target===this) closeContactModal()">
+  <div class="qual-modal contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button class="qual-modal-close" onclick="closeContactModal()" aria-label="Close">&#10005;</button>
+    <p class="contact-modal-kicker">&#10037; Get in touch</p>
+    <h3 class="contact-modal-title" id="contact-modal-title">Let&#39;s talk</h3>
+    <p class="contact-modal-copy">Send me an email and I&#39;ll come back to you. The button below opens your mail app with my address already in the To field.</p>
+    <div class="contact-modal-mailrow">
+      <a class="contact-modal-mail" href="mailto:Tshepodataboy@gmail.com">Tshepodataboy@gmail.com</a>
+      <button class="contact-modal-copybtn" type="button" onclick="copyContactEmail(this)" aria-label="Copy email address">Copy</button>
+    </div>
+    <a class="contact-modal-btn" href="mailto:Tshepodataboy@gmail.com?subject=Hello%20Tshepo%20%E2%80%94%20portfolio%20enquiry">Open email</a>
   </div>
 </div>
 

@@ -1,0 +1,10 @@
+{
+  "entrypoint": "worker.js",
+  "compatibilityDate": "2026-10-01",
+  "compatibilityFlags": [],
+  "modules": [
+    { "name": "worker.js", "type": "esm", "path": "freebuff-sites-build/worker.js" }
+  ],
+  "assetsDirectory": "freebuff-sites-build/assets",
+  "spa": false
+}
