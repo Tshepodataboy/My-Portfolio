@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css?v=33">
+<link rel="stylesheet" href="src/styles.css?v=34">
 </head>
 <body>
 
@@ -436,6 +436,64 @@
       <h2 class="h">Turning a spreadsheet into a small, auditable system</h2>
       <p class="b">This is the same discipline the rest of these case studies rely on: define what the number is meant to answer, make every transformation traceable, and leave the output in a state another person can pick up. Excel was the tool; repeatability was the actual deliverable.</p>
     </section>
+
+    <section class="body-sec erp-sec">
+      <p class="eyebrow">Featured build &middot; in progress</p>
+      <h2 class="h">A small ERP system, built inside Excel</h2>
+      <p class="b">The Excel case above proved the cleaning and reporting discipline on a single dataset. The next step is bigger: one workbook that behaves like a light ERP system, so a small business can run sales, stock, purchasing and reporting from the same source of truth instead of four spreadsheets that disagree with each other.</p>
+      <p class="b">It is a build in progress. The structure, rules and deliverables below are locked in; the workbook itself and its screenshots will be added to this page as each module is finished.</p>
+
+      <div class="erp-plan">
+        <div class="erp-plan__col">
+          <h3 class="erp-plan__title">Modules</h3>
+          <ul class="erp-list">
+            <li><strong>Customers &amp; suppliers</strong> — single master list, one ID per party, no re-typing names on transactions.</li>
+            <li><strong>Inventory</strong> — items, units, reorder levels and a live stock position derived from movements.</li>
+            <li><strong>Sales orders &amp; invoicing</strong> — order lines validated against the item and customer masters.</li>
+            <li><strong>Purchase orders</strong> — supplier orders that feed stock and cost of sales.</li>
+            <li><strong>Ledger summary</strong> — postings pulled from the transaction sheets, not retyped.</li>
+            <li><strong>Dashboard</strong> — revenue, margin, stock cover and outstanding balances on one screen.</li>
+          </ul>
+        </div>
+        <div class="erp-plan__col">
+          <h3 class="erp-plan__title">Rules the workbook enforces</h3>
+          <ul class="erp-list">
+            <li>Structured Excel tables so every range grows with the data.</li>
+            <li>Data validation on IDs, dates and quantities — bad entries are blocked, not cleaned up later.</li>
+            <li>Referential integrity: lookups reject items or customers that don't exist.</li>
+            <li>Protected formula and report sheets, editable input sheets only.</li>
+            <li>An audit log of every posting with user, timestamp and reference.</li>
+            <li>A reconciliation check that flags any out-of-balance period before reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="erp-plan__title erp-plan__title--spaced">Deliverables</h3>
+      <p class="b">Each slot below is ready for the real file. They will be filled as the build is finished — nothing here is placeheld with fake data.</p>
+      <div class="evidence-grid">
+        <div class="evidence-slot" id="slot-erp-workbook">
+          <span class="evidence-slot__kind">Workbook</span>
+          <span class="evidence-slot__name">erp-system.xlsx</span>
+          <span class="evidence-slot__note">File pending</span>
+        </div>
+        <div class="evidence-slot" id="slot-erp-model">
+          <span class="evidence-slot__kind">Data model</span>
+          <span class="evidence-slot__name">Table &amp; relationship map</span>
+          <span class="evidence-slot__note">File pending</span>
+        </div>
+        <div class="evidence-slot" id="slot-erp-shots">
+          <span class="evidence-slot__kind">Screenshots</span>
+          <span class="evidence-slot__name">Dashboard, order entry, inventory</span>
+          <span class="evidence-slot__note">Images pending</span>
+        </div>
+        <div class="evidence-slot" id="slot-erp-guide">
+          <span class="evidence-slot__kind">Documentation</span>
+          <span class="evidence-slot__name">User guide &amp; change log</span>
+          <span class="evidence-slot__note">File pending</span>
+        </div>
+      </div>
+    </section>
+
 
     <div class="case-end-spacer"></div>
   </div>
