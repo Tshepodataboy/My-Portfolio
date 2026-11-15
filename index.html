@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css?v=32">
+<link rel="stylesheet" href="src/styles.css?v=33">
 </head>
 <body>
 
@@ -136,7 +136,7 @@
 
     <section id="work">
       <div class="sec-head">
-        <h2>Case <span class="hl">Studies</span><span class="sec-tag">4 Projects</span></h2>
+        <h2>Case <span class="hl">Studies</span><span class="sec-tag">5 Projects</span></h2>
       </div>
       <div class="case-grid" id="case-grid">
 
@@ -194,6 +194,20 @@
             <p class="card__year">2026</p>
           </div>
           <p class="card__place">Google &middot; Coursera</p>
+        </article>
+
+        <article class="card card--orange" onclick="go('case-08')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('case-08');}" aria-label="Mastering Excel — open case study">
+          <div class="card__art"><svg viewBox="0 0 210 210" aria-hidden="true"><defs><pattern id="artSheet" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 .5H26M.5 0V26" stroke="#F97316" stroke-width="1" stroke-opacity=".5"/></pattern><linearGradient id="artSheetFade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient><mask id="artSheetMask"><rect width="210" height="210" fill="url(#artSheetFade)"/></mask></defs><rect x="-6" y="-6" width="222" height="222" fill="url(#artSheet)" mask="url(#artSheetMask)"/><rect x="104" y="104" width="52" height="52" fill="#F97316" opacity=".92"/><rect x="104" y="104" width="52" height="52" fill="none" stroke="#F97316" stroke-width="2.5"/></svg></div>
+          <div class="card__top">
+            <span class="card__logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M9.5 9.5V20M15 9.5V20"/></svg></span>
+            <span class="card__stamp">Case 08</span>
+          </div>
+          <div class="card__text">
+            <p class="card__kicker">Self-Directed</p>
+            <h3 class="card__title">Mastering<br>Excel</h3>
+            <p class="card__year">2026</p>
+          </div>
+          <p class="card__place">Spreadsheet Modelling<br>&amp; Automation</p>
         </article>
 
       </div>
@@ -375,6 +389,52 @@
       <div style="margin-top:18px;">
         <img src="assets/images/google-business-intelligence-professional-certificate.png" alt="Google Business Intelligence Professional Certificate" style="width:100%;max-width:640px;height:auto;border:1px solid var(--line);border-radius:8px;">
       </div>
+    </section>
+
+    <div class="case-end-spacer"></div>
+  </div>
+</div>
+
+<div id="view-case-08" class="view">
+  <div class="cwrap">
+    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="case-hero hero-img-04">
+      <div class="case-hero__art" aria-hidden="true"><svg viewBox="0 0 210 210" aria-hidden="true"><defs><pattern id="caseSheet08" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 .5H26M.5 0V26" stroke="#F97316" stroke-width="1" stroke-opacity=".5"/></pattern><linearGradient id="caseSheetFade08" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient><mask id="caseSheetMask08"><rect width="210" height="210" fill="url(#caseSheetFade08)"/></mask></defs><rect x="-6" y="-6" width="222" height="222" fill="url(#caseSheet08)" mask="url(#caseSheetMask08)"/><rect x="104" y="104" width="52" height="52" fill="#F97316" opacity=".92"/><rect x="104" y="104" width="52" height="52" fill="none" stroke="#F97316" stroke-width="2.5"/></svg></div>
+      <div class="case-hero__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M9.5 9.5V20M15 9.5V20"/></svg></div>
+      <p class="case-label">Case Study 08 &mdash; Spreadsheet Modelling &amp; Automation</p>
+      <h1>Mastering Excel</h1>
+      <p>Independent study &middot; Power Query, structured tables and an auditable monthly report.</p>
+      <div class="tag-row">
+        <span class="tag">Power Query</span>
+        <span class="tag">Financial Modelling</span>
+        <span class="tag">Dashboard Build</span>
+      </div>
+    </div>
+
+    <section class="body-sec">
+      <p class="eyebrow">Situation</p>
+      <h2 class="h">Excel was in every job advert, but basics weren't the ask</h2>
+      <p class="b">Almost every analyst job description I read named Excel, and most of them assumed more than the formulas taught in a classroom. I could build a simple table; I couldn't take a raw export from a business system and turn it into something a manager would trust. So I set myself a single exercise: take one genuinely messy dataset from start to finish, with no manual steps left in the middle.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Approach</p>
+      <h2 class="h">One messy export, rebuilt as a repeatable process</h2>
+      <p class="b">I started from a raw sales export of roughly 2,400 rows: dates stored as text in three different formats, duplicate order lines, blank categories, and totals mixed in with transaction rows. Instead of cleaning it by hand, I loaded it through Power Query so every cleanup step — splitting columns, trimming text, removing duplicates, filling and flagging blanks — was recorded and would re-run on next month's file.</p>
+      <p class="b">From there I modelled the clean data as structured Excel tables, used INDEX/MATCH and SUMIFS instead of fixed ranges, built PivotTables for the monthly roll-up, and added data validation and conditional formatting so anyone entering figures sees an error before it reaches a report. The output is a one-page dashboard: revenue by region, month-on-month change, and a small exception list of rows that failed validation.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Outcome</p>
+      <h2 class="h">A report that refreshes itself, and a process someone else can follow</h2>
+      <div class="callout">Manual preparation dropped from roughly two hours of copy-paste to a single refresh, with every transformation documented in the query steps.</div>
+      <p class="b">The value wasn't the dashboard itself — it was that the workbook could be handed over. A colleague can drop in next month's export, hit refresh, and get the same report, because the logic lives in the query and the formulas rather than in someone's memory. I wrote the build up as a short checklist of steps and checks so it could be repeated without me.</p>
+    </section>
+
+    <section class="body-sec">
+      <p class="eyebrow">Skill Demonstrated</p>
+      <h2 class="h">Turning a spreadsheet into a small, auditable system</h2>
+      <p class="b">This is the same discipline the rest of these case studies rely on: define what the number is meant to answer, make every transformation traceable, and leave the output in a state another person can pick up. Excel was the tool; repeatability was the actual deliverable.</p>
     </section>
 
     <div class="case-end-spacer"></div>
@@ -932,7 +992,7 @@
   </div>
 </footer>
 
-<script src="src/main.js?v=7"></script>
+<script src="src/main.js?v=8"></script>
 
 <div class="qual-modal-backdrop" id="qual-modal-backdrop" onclick="if(event.target===this) closeQualModal()">
   <div class="qual-modal">

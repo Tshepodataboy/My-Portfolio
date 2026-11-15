@@ -828,6 +828,7 @@
 .card--azure  { --card-accent: #38BDF8; }
 .card--mint   { --card-accent: #34D399; }
 .card--amber  { --card-accent: #FBBF24; }
+.card--orange { --card-accent: #F97316; }
 
 .case-grid .card__art {
   position: absolute;
@@ -1013,6 +1014,7 @@
 #view-case-02{--case-accent:#38BDF8;--case-accent-ink:#0284C7;--case-accent-soft:rgba(56,189,248,0.5);}
 #view-case-05{--case-accent:#34D399;--case-accent-ink:#059669;--case-accent-soft:rgba(52,211,153,0.5);}
 #view-case-07{--case-accent:#FBBF24;--case-accent-ink:#B45309;--case-accent-soft:rgba(251,191,36,0.5);}
+#view-case-08{--case-accent:#F97316;--case-accent-ink:#C2410C;--case-accent-soft:rgba(249,115,22,0.5);}
 
 [id^="view-case-"] .case-hero{
   background:#1B1B1B;
