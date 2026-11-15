@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company ERP — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="erp.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar__left">
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="brand">COMPANY <strong>ERP</strong></span>
+    </div>
+    <div class="topbar__right">
+      <button class="icon-btn bell" id="bell" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <span class="bell__dot" id="bellDot">3</span>
+      </button>
+      <div class="user">
+        <span class="user__avatar" aria-hidden="true">TM</span>
+        <span class="user__name">Admin</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav" id="nav" aria-label="Modules"></nav>
+      <div class="sidebar__foot">
+        <span class="dot"></span> FY2026 &middot; Period 11
+      </div>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="crumb" id="crumb">Dashboard</div>
+
+      <section class="view active" id="view-dashboard">
+        <h1 class="page-title">Dashboard</h1>
+        <p class="welcome">Welcome back, Tshepo</p>
+
+        <div class="kpis" id="kpis"></div>
+
+        <section class="panel">
+          <div class="panel__head">
+            <h2 class="panel__title"><span class="ico">&#128200;</span> Sales Performance</h2>
+            <span class="pill">Jan &ndash; Nov 2026</span>
+          </div>
+          <div class="chart" id="chart"></div>
+          <div class="chart__legend"><span class="key key--solid"></span> Monthly revenue (R'000) <span class="chart__meta" id="chartMeta"></span></div>
+        </section>
+
+        <div class="split">
+          <section class="panel">
+            <div class="panel__head"><h2 class="panel__title">Recent Activity</h2><span class="pill" id="activityCount"></span></div>
+            <ul class="activity" id="activity"></ul>
+          </section>
+          <section class="panel">
+            <div class="panel__head"><h2 class="panel__title">Stock Watch</h2><span class="pill">Reorder</span></div>
+            <ul class="watchlist" id="watchlist"></ul>
+          </section>
+        </div>
+      </section>
+
+      <div id="moduleHost"></div>
+
+      <footer class="foot">Company ERP &middot; single source of truth for sales, stock, purchasing and reporting.</footer>
+    </main>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="erp.js"></script>
+</body>
+</html>
