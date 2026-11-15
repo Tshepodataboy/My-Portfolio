@@ -1014,7 +1014,6 @@
 #view-case-02{--case-accent:#38BDF8;--case-accent-ink:#0284C7;--case-accent-soft:rgba(56,189,248,0.5);}
 #view-case-05{--case-accent:#34D399;--case-accent-ink:#059669;--case-accent-soft:rgba(52,211,153,0.5);}
 #view-case-07{--case-accent:#FBBF24;--case-accent-ink:#B45309;--case-accent-soft:rgba(251,191,36,0.5);}
-#view-case-08{--case-accent:#F97316;--case-accent-ink:#C2410C;--case-accent-soft:rgba(249,115,22,0.5);}
 
 [id^="view-case-"] .case-hero{
   background:#1B1B1B;
@@ -1318,48 +1317,3 @@
   overflow:hidden;
   text-overflow:ellipsis;
 }
-
-/* Case 08 — planned ERP build */
-.erp-plan{
-  display:grid;grid-template-columns:1fr 1fr;gap:28px;
-  margin:26px 0 8px;
-  padding:24px;
-  border:1px solid var(--line);
-  border-radius:16px;
-  background:var(--card);
-}
-@media(max-width:820px){.erp-plan{grid-template-columns:1fr;gap:22px;padding:20px;}}
-.erp-plan__title{
-  font-family:var(--display);font-weight:800;font-size:13px;
-  letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--case-accent-ink,var(--olive));
-  margin:0 0 12px;
-}
-.erp-plan__title--spaced{margin:30px 0 10px;}
-.erp-list{margin:0;padding:0;list-style:none;font-size:14px;line-height:1.65;color:var(--grey);}
-.erp-list li{position:relative;padding-left:16px;margin-bottom:9px;}
-.erp-list li::before{
-  content:'';position:absolute;left:0;top:0.62em;
-  width:5px;height:5px;border-radius:50%;
-  background:var(--case-accent,#F97316);
-}
-.erp-list strong{color:var(--ink);font-weight:700;}
-
-.evidence-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 4px;
-}
-@media(max-width:640px){.evidence-grid{grid-template-columns:1fr;}}
-.evidence-slot{
-  display:flex;flex-direction:column;gap:4px;
-  padding:16px 18px;
-  border:1.5px dashed var(--line);
-  border-radius:14px;
-  background:rgba(249,115,22,0.04);
-}
-.evidence-slot__kind{
-  font-family:var(--display);font-size:10.5px;font-weight:800;
-  letter-spacing:0.12em;text-transform:uppercase;
-  color:var(--case-accent-ink,#C2410C);
-}
-.evidence-slot__name{font-size:14.5px;font-weight:600;color:var(--ink);}
-.evidence-slot__note{font-size:12.5px;color:var(--grey);}

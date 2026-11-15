@@ -3,7 +3,7 @@ function qualTab(i){
     document.querySelectorAll('.qual-panel').forEach((p,n) => p.classList.toggle('active', n===i));
   }
 
-  const caseViews = ['case-01','case-02','case-05','case-07','case-08'];
+  const caseViews = ['case-01','case-02','case-05','case-07'];
 
   function flipBuildCard(showForm){
     const card = document.getElementById('build-flip-card');

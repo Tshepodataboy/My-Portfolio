@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css?v=34">
+<link rel="stylesheet" href="src/styles.css?v=35">
 </head>
 <body>
 
@@ -136,7 +136,7 @@
 
     <section id="work">
       <div class="sec-head">
-        <h2>Case <span class="hl">Studies</span><span class="sec-tag">5 Projects</span></h2>
+        <h2>Case <span class="hl">Studies</span><span class="sec-tag">4 Projects</span></h2>
       </div>
       <div class="case-grid" id="case-grid">
 
@@ -194,20 +194,6 @@
             <p class="card__year">2026</p>
           </div>
           <p class="card__place">Google &middot; Coursera</p>
-        </article>
-
-        <article class="card card--orange" onclick="go('case-08')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('case-08');}" aria-label="Mastering ERP — open case study">
-          <div class="card__art"><svg viewBox="0 0 210 210" aria-hidden="true"><defs><pattern id="artSheet" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 .5H26M.5 0V26" stroke="#F97316" stroke-width="1" stroke-opacity=".5"/></pattern><linearGradient id="artSheetFade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient><mask id="artSheetMask"><rect width="210" height="210" fill="url(#artSheetFade)"/></mask></defs><rect x="-6" y="-6" width="222" height="222" fill="url(#artSheet)" mask="url(#artSheetMask)"/><rect x="104" y="104" width="52" height="52" fill="#F97316" opacity=".92"/><rect x="104" y="104" width="52" height="52" fill="none" stroke="#F97316" stroke-width="2.5"/></svg></div>
-          <div class="card__top">
-            <span class="card__logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M9.5 9.5V20M15 9.5V20"/></svg></span>
-            <span class="card__stamp">Case 08</span>
-          </div>
-          <div class="card__text">
-            <p class="card__kicker">Self-Directed</p>
-            <h3 class="card__title">Mastering<br>ERP</h3>
-            <p class="card__year">2026</p>
-          </div>
-          <p class="card__place">ERP System<br>Built in Excel</p>
         </article>
 
       </div>
@@ -393,112 +379,6 @@
 
 
     <div class="case-end-spacer"></div>
-  </div>
-</div>
-
-<div id="view-case-08" class="view">
-  <div class="cwrap">
-    <button class="back-link" onclick="go('work')" aria-label="Back to Case Studies"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    <div class="case-hero hero-img-04">
-      <div class="case-hero__art" aria-hidden="true"><svg viewBox="0 0 210 210" aria-hidden="true"><defs><pattern id="caseSheet08" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 .5H26M.5 0V26" stroke="#F97316" stroke-width="1" stroke-opacity=".5"/></pattern><linearGradient id="caseSheetFade08" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient><mask id="caseSheetMask08"><rect width="210" height="210" fill="url(#caseSheetFade08)"/></mask></defs><rect x="-6" y="-6" width="222" height="222" fill="url(#caseSheet08)" mask="url(#caseSheetMask08)"/><rect x="104" y="104" width="52" height="52" fill="#F97316" opacity=".92"/><rect x="104" y="104" width="52" height="52" fill="none" stroke="#F97316" stroke-width="2.5"/></svg></div>
-      <div class="case-hero__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M9.5 9.5V20M15 9.5V20"/></svg></div>
-      <p class="case-label">Case Study 08 &mdash; ERP Systems Built in Excel</p>
-      <h1>Mastering ERP</h1>
-      <p>ERP design, relational data modelling and automation in one workbook &middot; build in progress.</p>
-      <div class="tag-row">
-        <span class="tag">ERP Design</span>
-        <span class="tag">Power Query</span>
-        <span class="tag">Financial Modelling</span>
-        <span class="tag">Dashboard Build</span>
-      </div>
-    </div>
-
-    <section class="body-sec">
-      <p class="eyebrow">Situation</p>
-      <h2 class="h">Small businesses run on spreadsheets that disagree with each other</h2>
-      <p class="b">The pattern repeats everywhere: sales in one file, stock in another, purchases in a third, and a dashboard built by hand on top of all of them. Nothing shares an ID, so the same customer is spelled three ways and the month-end numbers never quite meet. Hiring a full ERP is out of reach for most of these businesses; rebuilding four disconnected spreadsheets is not.</p>
-      <p class="b">So I set myself a single exercise: take a raw export from a business system and turn it into something a manager would trust, with no manual steps left in the middle &mdash; then scale that same discipline into a working ERP system.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Approach</p>
-      <h2 class="h">One messy export, rebuilt as a repeatable process</h2>
-      <p class="b">I started from a raw sales export of roughly 2,400 rows: dates stored as text in three different formats, duplicate order lines, blank categories, and totals mixed in with transaction rows. Instead of cleaning it by hand, I loaded it through Power Query so every cleanup step — splitting columns, trimming text, removing duplicates, filling and flagging blanks — was recorded and would re-run on next month's file.</p>
-      <p class="b">From there I modelled the clean data as structured Excel tables, used INDEX/MATCH and SUMIFS instead of fixed ranges, built PivotTables for the monthly roll-up, and added data validation and conditional formatting so anyone entering figures sees an error before it reaches a report. The output is a one-page dashboard: revenue by region, month-on-month change, and a small exception list of rows that failed validation.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Outcome</p>
-      <h2 class="h">A report that refreshes itself, and a process someone else can follow</h2>
-      <div class="callout">Manual preparation dropped from roughly two hours of copy-paste to a single refresh, with every transformation documented in the query steps.</div>
-      <p class="b">The value wasn't the dashboard itself — it was that the workbook could be handed over. A colleague can drop in next month's export, hit refresh, and get the same report, because the logic lives in the query and the formulas rather than in someone's memory. I wrote the build up as a short checklist of steps and checks so it could be repeated without me.</p>
-    </section>
-
-    <section class="body-sec">
-      <p class="eyebrow">Skill Demonstrated</p>
-      <h2 class="h">Turning a spreadsheet into a small, auditable system</h2>
-      <p class="b">This is the same discipline the rest of these case studies rely on: define what the number is meant to answer, make every transformation traceable, and leave the output in a state another person can pick up. Excel was the tool; repeatability was the actual deliverable.</p>
-    </section>
-
-    <section class="body-sec erp-sec">
-      <p class="eyebrow">Featured build &middot; in progress</p>
-      <h2 class="h">The ERP system, built inside Excel</h2>
-      <p class="b">The modelling and reporting work above proved the discipline on a single dataset. The next step is bigger: one workbook that behaves like a light ERP system, so a small business can run sales, stock, purchasing and reporting from the same source of truth instead of four spreadsheets that disagree with each other.</p>
-      <p class="b">It is a build in progress. The structure, rules and deliverables below are locked in; the workbook itself and its screenshots will be added to this page as each module is finished.</p>
-      <div style="margin:6px 0 4px;"><a class="pill" href="erp/index.html" target="_blank" rel="noopener">Open the live dashboard &rarr;</a></div>
-
-      <div class="erp-plan">
-        <div class="erp-plan__col">
-          <h3 class="erp-plan__title">Modules</h3>
-          <ul class="erp-list">
-            <li><strong>Customers &amp; suppliers</strong> — single master list, one ID per party, no re-typing names on transactions.</li>
-            <li><strong>Inventory</strong> — items, units, reorder levels and a live stock position derived from movements.</li>
-            <li><strong>Sales orders &amp; invoicing</strong> — order lines validated against the item and customer masters.</li>
-            <li><strong>Purchase orders</strong> — supplier orders that feed stock and cost of sales.</li>
-            <li><strong>Ledger summary</strong> — postings pulled from the transaction sheets, not retyped.</li>
-            <li><strong>Dashboard</strong> — revenue, margin, stock cover and outstanding balances on one screen.</li>
-          </ul>
-        </div>
-        <div class="erp-plan__col">
-          <h3 class="erp-plan__title">Rules the workbook enforces</h3>
-          <ul class="erp-list">
-            <li>Structured Excel tables so every range grows with the data.</li>
-            <li>Data validation on IDs, dates and quantities — bad entries are blocked, not cleaned up later.</li>
-            <li>Referential integrity: lookups reject items or customers that don't exist.</li>
-            <li>Protected formula and report sheets, editable input sheets only.</li>
-            <li>An audit log of every posting with user, timestamp and reference.</li>
-            <li>A reconciliation check that flags any out-of-balance period before reporting.</li>
-          </ul>
-        </div>
-      </div>
-
-      <h3 class="erp-plan__title erp-plan__title--spaced">Deliverables</h3>
-      <p class="b">Each slot below is ready for the real file. They will be filled as the build is finished — nothing here is placeheld with fake data.</p>
-      <div class="evidence-grid">
-        <div class="evidence-slot" id="slot-erp-workbook">
-          <span class="evidence-slot__kind">Workbook</span>
-          <span class="evidence-slot__name">erp-system.xlsx</span>
-          <span class="evidence-slot__note">File pending</span>
-        </div>
-        <div class="evidence-slot" id="slot-erp-model">
-          <span class="evidence-slot__kind">Data model</span>
-          <span class="evidence-slot__name">Table &amp; relationship map</span>
-          <span class="evidence-slot__note">File pending</span>
-        </div>
-        <div class="evidence-slot" id="slot-erp-shots">
-          <span class="evidence-slot__kind">Screenshots</span>
-          <span class="evidence-slot__name">Dashboard, order entry, inventory</span>
-          <span class="evidence-slot__note">Live prototype above</span>
-        </div>
-        <div class="evidence-slot" id="slot-erp-guide">
-          <span class="evidence-slot__kind">Documentation</span>
-          <span class="evidence-slot__name">User guide &amp; change log</span>
-          <span class="evidence-slot__note">File pending</span>
-        </div>
-      </div>
-    </section>
-
-<div class="case-end-spacer"></div>
   </div>
 </div>
 
@@ -1053,7 +933,7 @@
   </div>
 </footer>
 
-<script src="src/main.js?v=10"></script>
+<script src="src/main.js?v=11"></script>
 
 <div class="qual-modal-backdrop" id="qual-modal-backdrop" onclick="if(event.target===this) closeQualModal()">
   <div class="qual-modal">
