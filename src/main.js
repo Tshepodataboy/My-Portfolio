@@ -157,7 +157,7 @@ function qualTab(i){
     const hash = (location.hash || '#home').slice(1);
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
 
-    const certMatch = hash.match(/^(case-0[1258])-cert$/);
+    const certMatch = hash.match(/^(case-0[1257])-cert$/);
     if(certMatch){
       const baseView = certMatch[1];
       document.getElementById('view-' + baseView).classList.add('active');
